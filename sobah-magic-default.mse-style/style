@@ -1,0 +1,128 @@
+mse version: 2.0.0
+game: sobah-magic
+short name: Original
+icon: card-blank-icon.png
+position hint: 1
+installer group: sobah-magic/default
+
+depends on:
+	package: sobah-magic.mse-game
+	
+card width: 880
+card height: 1201
+card dpi: 300
+
+card style:
+	spell_name:
+		left: 138
+		top: 36
+		width: 708
+		height: 60
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 64
+			color: rgb(0, 0, 0)
+		z index: 1
+	magic_list:
+		left: 138
+		top: 105
+		width: 708
+		height: 34
+		font:
+			name: DCC-SharpDistressBlack
+			size: 28
+			color: rgb(0, 0, 0)
+		z index: 1
+	description:
+		left: 53
+		top: 690
+		width: 790
+		height: 377
+		font:
+			name: Calibri
+			size: 26
+			color: rgb(255, 255, 255)
+		symbol font:
+			name: sobah-symbols
+		z index: 1
+	credits:
+		left: 53
+		top: 1070
+		width: 650
+		height: 30
+		alignment: bottom right
+		font:
+			name: Calibri
+			size: 18
+			color: rgb(255, 255, 255)
+		z index: 1
+	books:
+		left: 101
+		top: 1134
+		width: 598
+		height: 33
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 32
+			color: rgb(0, 0, 0)
+		z index: 1
+	spell_number:
+		left: 30
+		top: 26
+		width: 67
+		height: 67
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 56
+			color: rgb(255, 255, 255)
+		z index: 1
+	spell_type:
+		left: 0
+		top: 164
+		width: 201
+		height: 169
+		z index: 2
+		render style: image
+		popup style: in place
+		mask: magic-type-mask.png
+		choice images:
+			buff: magic-buff.png
+			attack: magic-attack.png
+			debuff: magic-debuff.png
+			control: magic-control.png
+			invoke: magic-invoke.png
+	img_description:
+		left: 18
+		top: 144
+		width: 848
+		height: 531
+		z index: -1
+	img_magiclist:
+		left: 739
+		top: 1063
+		width: 110
+		height: 110
+		z index: -1
+	img_bg:
+		left: 0
+		top: 0
+		width: 880
+		height: 1201
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			red: magic-red.png
+			green: magic-darkgreen.png
+			mauve: magic-purple.png
+			brown: magic-brown.png
+			orange: magic-orange.png
+			blue: magic-lightblue.png
+			darkblue: magic-darkblue.png
+			grey: magic-grey.png
+			lightgreen: magic-lightgreen.png
+			yellow: magic-yellow.png

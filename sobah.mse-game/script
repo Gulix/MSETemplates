@@ -1,0 +1,1 @@
+﻿only_numbers := filter_text@(match: "^[0123456789]+")

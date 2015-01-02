@@ -1,0 +1,130 @@
+mse version: 2.0.0
+game: sobah
+short name: Dungeon Command Style
+icon: card-blank-icon.png
+position hint: 1
+installer group: sobah/default
+
+depends on:
+	package: sobah.mse-game
+	
+card width: 880
+card height: 1201
+card dpi: 300
+
+card style:
+	card_name:
+		left: 138
+		top: 36
+		width: 708
+		height: 60
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 64
+			color: rgb(0, 0, 0)
+		z index: 1
+	card_surname:
+		left: 138
+		top: 105
+		width: 708
+		height: 34
+		font:
+			name: DCC-SharpDistressBlack
+			size: 28
+			color: rgb(0, 0, 0)
+		z index: 1
+	special_rules:
+		left: 53
+		top: 728
+		width: 790
+		height: 377
+		font:
+			name: Calibri
+			size: 26
+			color: rgb(255, 255, 255)
+		symbol font:
+			name: sobah-symbols
+		z index: 1
+	books:
+		left: 101
+		top: 1134
+		width: 598
+		height: 33
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 32
+			color: rgb(0, 0, 0)
+		z index: 1
+	quality_value:
+		left: 118
+		top: 160
+		width: 100
+		height: 70
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 56
+			color: rgb(255, 255, 255)
+		z index: 1
+	combat_value:
+		left: 118
+		top: 250
+		width: 69
+		height: 70
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 56
+			color: rgb(255, 255, 255)
+		z index: 1
+	points_value:
+		left: 30
+		top: 26
+		width: 67
+		height: 51
+		alignment: middle center
+		font:
+			name: DCC-SharpDistressBlack
+			size: 40
+			color: rgb(255, 255, 255)
+		z index: 1
+	card_type:
+		left: 699
+		top: 974
+		width: 153
+		height: 164
+		z index: 2
+		render style: image
+		popup style: in place
+		mask: mask_type.png
+		choice images:
+			standard: type_standard.png
+			personality: type_personality.png
+	img_description:
+		left: 18
+		top: 144
+		width: 848
+		height: 531
+		z index: -1
+	img_bg:
+		left: 0
+		top: 0
+		width: 880
+		height: 1201
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			red: red.png
+			green: green.png
+			mauve: mauve.png
+			brown: brown.png
+			orange: orange.png
+			blue: blue.png
+			darkblue: darkblue.png
+			grey: grey.png
+			lightgreen: lightgreen.png
+			yellow: yellow.png

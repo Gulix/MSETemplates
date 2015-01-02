@@ -1,0 +1,105 @@
+﻿mse version: 2.0.0
+short name: SBH Magic
+full name: SBH (Spells & Magic)
+icon: sbh.png
+position hint: 4
+installer group: sobah-magic/default
+
+init script: include file: script
+
+card field:
+	type: text
+	name: spell_name
+	description: Name of the Spell
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: magic_list
+	description: Magic List of the Spell
+	show statistics: false
+	card list visible: true
+	card list allow: true
+card field:
+	type: text
+	name: description
+	description: Description
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: books
+	description: Books required
+	card list visible: true
+card field:
+	type: choice
+	name: spell_number
+	description: Spell number in the List
+	card list column: 2
+	card list visible: true
+	identifying: true
+	initial: 1
+	choice: 1
+	choice: 2
+	choice: 3
+	choice: 4
+	choice: 5
+	choice: 6
+card field:
+	type: choice
+	name: spell_type
+	description: Type of the Spell
+	card list column: 6
+	card list visible: true
+	initial: attack
+	choice: attack
+	choice: buff
+	choice: debuff
+	choice: control
+	choice: invoke
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
+card field:
+	type: image
+	name: img_magiclist
+	description: Image for the Magic List
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
+card field:
+	type: choice
+	name: img_bg
+	description: Card background
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	initial: red
+	choice: red
+	choice: green
+	choice: orange
+	choice: brown
+	choice: mauve
+	choice: blue
+	choice: darkblue
+	choice: grey
+	choice: lightgreen
+	choice: yellow
+card field:
+	type: text
+	name: credits
+	description: Credits of the Illustration
+	show statistics: false
+	card list visible: false
+	card list allow: false

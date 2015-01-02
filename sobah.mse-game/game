@@ -1,0 +1,101 @@
+﻿mse version: 2.0.0
+short name: SBH
+full name: Song of Blades & Heroes
+icon: sbh.png
+position hint: 4
+installer group: sobah/default
+
+init script: include file: script
+
+card field:
+	type: text
+	name: card_name
+	description: Card Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: card_surname
+	description: Card Surname
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: special_rules
+	description: Special rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: books
+	description: Books required
+	card list visible: true
+card field:
+	type: choice
+	name: quality_value
+	description: Quality
+	card list column: 2
+	card list visible: true
+	identifying: true
+	initial: 4+
+	choice: 1+
+	choice: 2+
+	choice: 3+
+	choice: 4+
+	choice: 5+
+	choice: 6+
+card field:
+	type: text
+	name: combat_value
+	description: Combat
+	card list column: 3
+	card list visible: true
+	script: only_numbers(value)
+card field:
+	type: text
+	name: points_value
+	description: Cost of the card
+	card list column: 4
+	card list visible: true
+	identifying: true
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: card_type
+	description: Type of the Card
+	card list column: 6
+	card list visible: true
+	initial: standard
+	choice: standard
+	choice: personality
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
+card field:
+	type: choice
+	name: img_bg
+	description: Card background
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	initial: red
+	choice: red
+	choice: green
+	choice: orange
+	choice: brown
+	choice: mauve
+	choice: blue
+	choice: darkblue
+	choice: grey
+	choice: lightgreen
+	choice: yellow

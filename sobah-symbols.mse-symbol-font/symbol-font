@@ -1,0 +1,5 @@
+﻿mse version: 0.3.7
+version: 2008-10-06
+short name: old
+position hint: 2
+installer group: sobah/default
