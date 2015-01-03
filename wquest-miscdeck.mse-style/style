@@ -1,0 +1,80 @@
+mse version: 2.0.0
+game: wquest
+short name: Misc Cards
+icon: icon.png
+position hint: 6
+installer group: wquest/default
+
+depends on:
+	package: wquest.mse-game
+	
+card width: 880
+card height: 1201
+card dpi: 300
+
+card style:
+	card_name:
+		left: 296
+		top: 45
+		width: 530
+		height: 117
+		alignment: middle right
+		font:
+			name: Footlight MT Light
+			size: 48
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	card_type:
+		left: 12
+		top: 12
+		width: 391
+		height: 113
+		alignment: middle center
+		font:
+			name: Footlight MT Light
+			size: 30
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 2
+	special_rules:
+		left: 57
+		top: 161
+		width: 767
+		height: 956
+		alignment: top left
+		font:
+			name: Calibri
+			size: 22
+			color: rgb(0, 0, 0)
+		mask: textMask.png
+		z index: 1
+	credits_illustration:
+		left: 49
+		top: 1117
+		width: 415
+		height: 44
+		alignment: middle right
+		font:
+			name: Calibri
+			size: 18
+			color: rgb(0, 0, 0)
+			style: italic
+		z index: 1
+	img_bg:
+		left: 0
+		top: 0
+		width: 880
+		height: 1201
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			blackwhite: miscCard.png
+	img_description:
+		left: 484
+		top: 788
+		width: 370
+		height: 387
+		z index: -1

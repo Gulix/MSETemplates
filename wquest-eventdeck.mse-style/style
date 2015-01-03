@@ -1,0 +1,68 @@
+mse version: 2.0.0
+game: wquest
+short name: Evenements
+icon: icon.png
+position hint: 1
+installer group: wquest/default
+
+depends on:
+	package: wquest.mse-game
+	
+card width: 880
+card height: 1201
+card dpi: 300
+
+card style:
+	card_name:
+		left: 15
+		top: 39
+		width: 360
+		height: 180
+		alignment: middle center
+		font:
+			name: Footlight MT Light
+			size: 60
+			color: rgb(0, 0, 0)
+		z index: 1
+	card_number:
+		left: 532
+		top: 770
+		width: 202
+		height: 202
+		alignment: middle center
+		font:
+			name: Footlight MT Light
+			size: 192
+			color: rgb(0, 0, 0)
+		z index: 1
+	credits_illustration:
+		left: 370
+		top: 1158
+		width: 490
+		height: 43
+		alignment: middle right
+		font:
+			name: Calibri
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	img_bg:
+		left: 0
+		top: 0
+		width: 880
+		height: 1201
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			blackwhite: eventCardBW.png
+			bluered: eventCard.png
+			redwhite: eventCardRW.png
+			bluewhite: eventCardBlueWhite.png
+	img_description:
+		left: 0
+		top: 0
+		width: 880
+		height: 1201
+		z index: -1

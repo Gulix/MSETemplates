@@ -1,0 +1,106 @@
+﻿mse version: 2.0.0
+short name: WH Quest
+full name: Warhammer Quest
+icon: whq.jpg
+position hint: 2
+installer group: wquest/default
+
+card field:
+	type: text
+	name: card_type
+	description: Type de cartes
+	card list column: 3
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: card_number
+	description: Numéro de la carte
+	card list column: 2
+	card list visible: true
+card field:
+	type: choice
+	name: img_bg
+	description: Card background
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	initial: blackwhite
+	choice: blackwhite
+	choice: bluered
+	choice: bluewhite
+	choice: redwhite
+card field:
+	type: text
+	name: card_name
+	description: Nom de la carte
+	card list column: 1
+	card list visible: true
+	identifying: true
+	show statistics: false
+	multi line: true
+card field:
+	type: text
+	name: hit_points
+	description: Points de vie
+card field:
+	type: text
+	name: movement
+	description: Mouvement
+card field:
+	type: text
+	name: combat
+	description: Combat
+card field:
+	type: text
+	name: shoot
+	description: Tir
+card field:
+	type: text
+	name: strength
+	description: Force
+card field:
+	type: text
+	name: toughness
+	description: Endurance
+card field:
+	type: text
+	name: initiative
+	description: Initiative
+card field:
+	type: text
+	name: attacks
+	description: Attaques
+card field:
+	type: text
+	name: armour
+	description: Armure
+card field:
+	type: text
+	name: special_rules
+	description: Règles spéciales
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: gold_value
+	description: Valeur
+card field:
+	type: image
+	name: img_description
+	description: Image
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
+card field:
+	type: text
+	name: artificial_intelligence
+	description: IA
+card field:
+	type: text
+	name: credits_illustration
+	description: credits
