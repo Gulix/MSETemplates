@@ -45,7 +45,7 @@ card style:
 		alignment: top left
 		font:
 			name: Calibri
-			size: 22
+			size: 28
 			color: rgb(0, 0, 0)
 		mask: textMask.png
 		z index: 1
