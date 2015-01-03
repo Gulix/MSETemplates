@@ -2,7 +2,7 @@
 short name: SBH
 full name: Song of Blades & Heroes
 icon: sbh.png
-position hint: 4
+position hint: 3
 installer group: sobah/default
 
 init script: include file: script

@@ -1,6 +1,7 @@
 mse version: 2.0.0
 game: sobah-magic
-short name: Original
+short name: SSM/DC Style
+full name: Dungeon Command Style
 icon: card-blank-icon.png
 position hint: 1
 installer group: sobah-magic/default

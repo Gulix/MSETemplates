@@ -1,7 +1,7 @@
 ﻿mse version: 2.0.0
-short name: SBH Magic
-full name: SBH (Spells & Magic)
-icon: sbh.png
+short name: SSM
+full name: Song of Spell & Magic
+icon: ssm.png
 position hint: 4
 installer group: sobah-magic/default
 
