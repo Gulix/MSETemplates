@@ -16,7 +16,7 @@ card style:
 	card_name:
 		left: 15
 		top: 39
-		width: 360
+		width: 370
 		height: 180
 		alignment: middle center
 		font:
