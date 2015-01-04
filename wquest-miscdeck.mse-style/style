@@ -71,7 +71,10 @@ card style:
 		popup style: in place
 		mask: mask.png
 		choice images:
-			blackwhite: miscCard.png
+			basic: miscCard.png
+			variant1: miscCardv2.png
+			variant2: miscCardv3.png
+			variant3: miscCardv4.png
 	img_description:
 		left: 484
 		top: 788

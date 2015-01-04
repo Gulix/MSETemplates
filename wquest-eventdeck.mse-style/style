@@ -56,10 +56,10 @@ card style:
 		popup style: in place
 		mask: mask.png
 		choice images:
-			blackwhite: eventCardBW.png
-			bluered: eventCard.png
-			redwhite: eventCardRW.png
-			bluewhite: eventCardBlueWhite.png
+			basic: eventCardBW.png
+			variant1: eventCard.png
+			variant2: eventCardRW.png
+			variant3: eventCardBlueWhite.png
 	img_description:
 		left: 0
 		top: 0

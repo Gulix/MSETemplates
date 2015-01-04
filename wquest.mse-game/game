@@ -25,11 +25,11 @@ card field:
 	show statistics: false
 	card list visible: false
 	card list allow: false
-	initial: blackwhite
-	choice: blackwhite
-	choice: bluered
-	choice: bluewhite
-	choice: redwhite
+	initial: basic
+	choice: basic
+	choice: variant1
+	choice: variant2
+	choice: variant3
 card field:
 	type: text
 	name: card_name
@@ -75,6 +75,10 @@ card field:
 	type: text
 	name: armour
 	description: Armure
+card field:
+	type: text
+	name: damages
+	description: Dommages
 card field:
 	type: text
 	name: special_rules

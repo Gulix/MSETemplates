@@ -1,0 +1,169 @@
+mse version: 2.0.0
+game: wquest
+short name: Monster Cards
+icon: icon.png
+position hint: 2
+installer group: wquest/default
+
+depends on:
+	package: wquest.mse-game
+	
+card width: 880
+card height: 1201
+card dpi: 300
+
+card style:
+	card_name:
+		left: 416
+		top: 1059
+		width: 455
+		height: 128
+		alignment: middle right
+		font:
+			name: Footlight MT Light
+			size: 48
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	special_rules:
+		left: 46
+		top: 232
+		width: 784
+		height: 922
+		alignment: top left
+		font:
+			name: Calibri
+			size: 28
+			color: rgb(0, 0, 0)
+		mask: textMask.png
+		z index: 1
+	img_bg:
+		left: 0
+		top: 0
+		width: 880
+		height: 1201
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			basic: monsterCardV1.png
+			variant1: monsterCardV2.png
+			variant2: monsterCardV3.png
+			variant3: monsterCardV4.png
+	img_description:
+		left: 38
+		top: 38
+		width: 378
+		height: 428
+		z index: -1
+	hit_points:
+		left: 733
+		top: 40
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	movement:
+		left: 733
+		top: 113
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	combat:
+		left: 733
+		top: 186
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	shoot:
+		left: 733
+		top: 259
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	strength:
+		left: 733
+		top: 332
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	toughness:
+		left: 733
+		top: 405
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	initiative:
+		left: 733
+		top: 478
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	attacks:
+		left: 733
+		top: 551
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	gold_value:
+		left: 733
+		top: 624
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	armour:
+		left: 733
+		top: 697
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)
+	damages:
+		left: 733
+		top: 770
+		width: 109
+		height: 63
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 36
+			color: rgb(0, 0, 0)

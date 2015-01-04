@@ -13,5 +13,5 @@ Polices nécessaires :
 "Warhammer Quest" is a game by Games Workshop : http://www.games-workshop.com
 
 Fonts required :
- - DCC-SharpDistressBlack : http://fontsgeek.com/fonts/Footlight-MT-Light-Regular
+ - Footlight MT Light : http://fontsgeek.com/fonts/Footlight-MT-Light-Regular
  - Calibri : http://www.fontpalace.com/font-details/Calibri/
