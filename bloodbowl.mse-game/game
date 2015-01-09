@@ -1,0 +1,203 @@
+﻿mse version: 2.0.0
+short name: Blood Bowl
+full name: Blood Bowl
+icon: blood_bowl_12.png
+position hint: 5
+installer group: bloodbowl/default
+
+init script: include file: script
+
+include file: add_cards_scripts_champions
+include file: add_cards_scripts_inducements
+
+card field:
+	type: text
+	name: card_name
+	description: Nom de la carte
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: player_position
+	description: Position du joueur
+	card list column: 8
+	card list visible: true
+card field:
+	type: text
+	name: card_teams
+	description: Equipes possibles
+	card list column: 7
+	card list visible: true
+	multi line: true
+card field:
+	type: text
+	name: card_skills
+	description: Compétences
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: card_notes
+	description: Notes
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: image
+	name: img_description
+	description: Image du champion
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
+card field:
+	type: text
+	name: movement
+	description: Caractéristique M
+	card list column: 3
+	card list visible: true
+	script: only_numbers(value)
+card field:
+	type: text
+	name: strength
+	description: Caractéristique F
+	card list column: 4
+	card list visible: true
+	script: only_numbers(value)
+card field:
+	type: text
+	name: agility
+	description: Caractéristique Ag
+	card list column: 5
+	card list visible: true
+	script: only_numbers(value)
+card field:
+	type: text
+	name: armor
+	description: Caractéristique Ar
+	card list column: 6
+	card list visible: true
+	script: only_numbers(value)
+card field:
+	type: text
+	name: cost
+	description: Coût du champion
+	card list column: 2
+	card list visible: true
+card field:
+	type: choice
+	name: card_type
+	description: Type de carte
+	card list column: 9
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
+	initial: standard
+	choice: standard
+	choice: bloody
+card field:
+	type: choice
+	name: name_length
+	description: Longueur du nom (pour affichage plus petit)
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	initial: standard
+	choice: standard
+	choice: medium
+	choice: long
+	choice: megalong
+card field:
+	type: multiple choice
+	name: team_choice
+	description: Equipes disponibles
+	editable: true
+	show statistics: true
+	card list visible: false
+	card list allow: false
+	initial: toutes
+	choice: toutes
+	choice: amazones
+	choice: chaos
+	choice: elfes pros
+	choice: elfes noirs
+	choice: elfes sylvains
+	choice: gobelins
+	choice: halflings
+	choice: hauts elfes
+	choice: hommes lezards
+	choice: humains
+	choice: khemris
+	choice: morts vivants
+	choice: nains (standard)
+	choice: nains du chaos
+	choice: necromantiques
+	choice: nordiques
+	choice: nurgle
+	choice: ogres
+	choice: orques
+	choice: skavens
+	choice: vampires
+	choice: pacte du chaos
+	choice: slanns
+	choice: sous monde
+card field:
+	type: choice
+	name: inducement_card_type
+	description: Type de primes de match
+	card list column: 10
+	show statistics: true
+	card list visible: false
+	card list allow: true
+	save value: true
+	initial: actions speciales
+	choice: actions speciales
+	choice: bon karma
+	choice: coups bas
+	choice: evenements aleatoires
+	choice: incidents mineurs
+	choice: mesures desesperees
+	choice: objets magiques
+card field:
+	type: text
+	name: card_description
+	description: Description
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: card_when
+	description: Quand l'utiliser
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: card_effects
+	description: Effets
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: choice
+	name: effects_font_size
+	description: Taille de la police pour la description des cartes
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	initial: standard
+	choice: standard
+	choice: little
+	choice: very-little

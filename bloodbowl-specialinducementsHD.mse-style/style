@@ -1,0 +1,102 @@
+mse version: 2.0.0
+game: bloodbowl
+short name: (HD) Primes generiques
+icon: card-blank-icon.png
+position hint: 2
+installer group: bloodbowl/default
+
+depends on:
+	package: bloodbowl.mse-game
+	
+card width: 880
+card height: 1201
+card dpi: 300
+
+card style:
+	card_name:
+		left: 107
+		top: 935
+		width: 735
+		height: 73
+		angle: 90
+		font:
+			name: SteinAntik
+			size: { if (card.name_length != "long" and card.name_length != "megalong") then 45 else 28 }
+			color: rgb(255, 42, 42)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		alignment: middle center
+		z index: 3
+	card_teams:
+		left: 215
+		top: 1055
+		width: 598
+		height: 61
+		font:
+			name: SteinAntik
+			size: 15
+			color: rgb(20, 7, 0)
+			weight: bold
+		alignment: middle center
+		z index: 3
+	card_skills:
+		left: 205
+		top: 465
+		width: 565
+		height: 534
+		font:
+			name: Delius
+			size: { if card.effects_font_size == "standard" then 22 else if card.effects_font_size == "little" then 20 else 16}
+			color: rgb(20, 7, 0)	
+		alignment: top left force justify if-overflow
+		z index: 3
+	img_description:
+		left: 182
+		top: 59
+		width: 647
+		height: 401
+		z index: 0
+	cost:
+		left: 86
+		top: 130
+		width: 143
+		height: 49
+		font:
+			name: SteinAntik
+			size: 28
+			weight: bold
+			color: { if card.card_type == "standard" then rgb(70, 23, 0) else if card.card_type == "bloody" then rgb(255, 190, 61) }
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		z index: 3
+		alignment: middle center
+	card_type:
+		left:	0
+		top:	0
+		width:	880
+		height:	1201
+		z index: 1
+		render style: image
+		popup style: in place
+		mask: MaskFullHD.png
+		choice images:
+			standard: FullHDPrimes.png
+			bloody: FullHDPrimes.png
+	name_length:
+		left: 106
+		top: 977
+		width: 76
+		height: 28
+		z index: 3
+		render style: hidden
+	effects_font_size:
+		left: 780
+		top: 470
+		width: 42
+		height: 32
+		z index: 3
+		render style: hidden

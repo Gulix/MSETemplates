@@ -1,0 +1,96 @@
+mse version: 2.0.0
+game: bloodbowl
+short name: primes de match
+icon: card-blank-icon.png
+position hint: 3
+installer group: bloodbowl/default
+
+depends on:
+	package: bloodbowl.mse-game
+	
+card width: 536
+card height: 750
+card dpi: 72
+
+card style:
+	card_name:
+		left: 12
+		top: 25
+		width: 507
+		height: 96
+		font:
+			name: Sherwood
+			size: { if card.name_length == "long" then 26 else if card.name_length == "megalong" then 18 else if card.name_length == "medium" then 32 else 40 }
+			color: { if card.inducement_card_type == "actions speciales" then rgb(39, 70, 150) else if card.inducement_card_type == "bon karma" then rgb(186, 74, 0) else if card.inducement_card_type == "coups bas" then rgb(128, 31, 35) else if card.inducement_card_type == "evenements aleatoires" then rgb(101, 55, 105) else if card.inducement_card_type == "incidents mineurs" then rgb(89, 93, 35) else if card.inducement_card_type == "mesures desesperees" then rgb(150, 87, 33) else if card.inducement_card_type == "objets magiques" then rgb(104, 61, 35) else rgb(0, 0, 0) }
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 3
+		alignment: middle center
+		z index: 1
+	name_length:
+		left: 238
+		top: 133
+		width: 74
+		height: 23
+		z index: 1
+		render style: hidden
+	card_description:
+		left: 26
+		top: 190
+		width: 479
+		height: 89
+		font:
+			name: Delius
+			size: 13
+			color: rgb(0, 0, 0)
+			style: italic
+		alignment: top center force justify if-overflow		
+		z index: 1
+	card_effects:
+		left: 26
+		top: 285
+		width: 479
+		height: 342
+		font:
+			name: Delius
+			size: { if card.effects_font_size == "standard" then 18 else if card.effects_font_size == "little" then 16 else 14}
+			color: rgb(0, 0, 0)
+		alignment: middle left force justify if-overflow		
+		z index: 1
+	card_when:
+		left: 26
+		top: 650
+		width: 479
+		height: 66
+		font:
+			name: Delius
+			size: 11
+			color: rgb(0, 0, 0)
+			weight: bold
+		alignment: bottom center force justify if-overflow
+		z index: 1
+	inducement_card_type:
+		left:	0
+		top:	0
+		width:	536
+		height:	750
+		z index: 0
+		render style: image
+		popup style: in place
+		choice images:
+			actions speciales : ActionsSpeciales.png
+			bon karma : BonKarma.png
+			coups bas : CoupsBas.png
+			evenements aleatoires : EvenementsAleatoires.png
+			incidents mineurs : IncidentMineur.png
+			mesures desesperees : MesuresDesesperees.png
+			objets magiques : ObjetsMagiques.png
+	effects_font_size:
+		left: 505
+		top: 285
+		width: 30
+		height: 23
+		z index: 1
+		render style: hidden
+			

@@ -1,0 +1,207 @@
+mse version: 2.0.0
+game: bloodbowl
+short name: Champions
+icon: card-blank-icon.png
+position hint: 1
+installer group: bloodbowl/default
+
+depends on:
+	package: bloodbowl.mse-game
+	
+card width: 536
+card height: 750
+card dpi: 200
+
+card style:
+	card_name:
+		left: 30
+		top: 614
+		width: 525
+		height: 52
+		angle: 90
+		font:
+			name: SteinAntik
+			size: { if (card.name_length != "long" and card.name_length != "megalong") then 32 else 20 }
+			color: rgb(84, 7, 0)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		alignment: middle center
+		z index: 3
+	card_teams:
+		left: 43
+		top: 710
+		width: 477
+		height: 40
+		font:
+			name: SteinAntik
+			size: 11
+			color: rgb(20, 7, 0)
+			weight: bold
+		alignment: middle center
+		z index: 3
+	card_skills:
+		left: 100
+		top: 400
+		width: 365
+		height: 255
+		font:
+			name: SteinAntik
+			size: 17
+			color: rgb(20, 7, 0)
+			weight: bold
+		alignment: top left force justify if-overflow
+		z index: 3
+	card_notes:
+		left: 100
+		top: 550
+		width: 365
+		height: 105
+		font:
+			name: SteinAntik
+			size: 12
+			color: rgb(20, 7, 0)
+			style: italic
+		alignment: bottom left force justify if-overflow
+		z index: 4
+	img_description:
+		left: 71
+		top: 0
+		width: 465
+		height: 361
+		z index: 0
+	movement:
+		left: 131
+		top: 351
+		width: 41
+		height: 37
+		font:
+			name: SteinAntik
+			size: 22
+			weight:bold
+			color: rgb(25, 10, 0)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		z index: 3
+		alignment: middle center
+	strength:
+		left: 202
+		top: 351
+		width: 41
+		height: 37
+		font:
+			name: SteinAntik
+			size: 22
+			weight:bold
+			color: rgb(25, 10, 0)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		z index: 3
+		alignment: middle center
+	agility:
+		left: 273
+		top: 351
+		width: 41
+		height: 37
+		font:
+			name: SteinAntik
+			size: 22
+			weight:bold
+			color: rgb(25, 10, 0)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		z index: 3
+		alignment: middle center
+	armor:
+		left: 344
+		top: 351
+		width: 41
+		height: 37
+		font:
+			name: SteinAntik
+			size: 22
+			weight:bold
+			color: rgb(25, 10, 0)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		z index: 3
+		alignment: middle center
+	cost:
+		left: 15
+		top: 39
+		width: 102
+		height: 35
+		font:
+			name: SteinAntik
+			size: 20
+			weight: bold
+			color: { if card.card_type == "standard" then rgb(70, 23, 0) else if card.card_type == "bloody" then rgb(255, 190, 61) }
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: 1
+			shadow displacement y: 1
+			shadow blur: 2
+		z index: 3
+		alignment: middle center
+	card_type:
+		left:	0
+		top:	0
+		width:	536
+		height:	750
+		z index: 1
+		render style: image
+		popup style: in place
+		mask: ChampionsMask.png
+		choice images:
+			standard: Champions_full.png
+			bloody: Champions_full_bloody.png
+	name_length:
+		left: 29
+		top: 644
+		width: 54
+		height:20
+		z index: 3
+		render style: hidden
+	team_choice:
+		left: 472
+		top: 670
+		width: 264
+		height: 65
+		z index: 3
+		alignment: top left
+		angle: 90
+		render style: image list
+		choice images:
+			toutes: team_icons/amazon.png
+			amazones: team_icons/amazon.png
+			chaos: team_icons/chaos.png
+			elfes pros: team_icons/elf.png
+			elfes noirs: team_icons/darkelf.png
+			elfes sylvains: team_icons/woodelf.png
+			gobelins: team_icons/gobelin.png
+			halflings: team_icons/halfling.png
+			hauts elfes: team_icons/highelf.png
+			hommes lezards: team_icons/lizardmen.png
+			humains: team_icons/human.png
+			khemris: team_icons/khemri.png
+			morts vivants: team_icons/undead.png
+			nains (standard): team_icons/dwarf.png
+			nains du chaos: team_icons/chaosdwarf.png
+			necromantiques: team_icons/necromantic.png
+			nordiques: team_icons/nordic.png
+			nurgle: team_icons/nurgle.png
+			ogres: team_icons/ogre.png
+			orques: team_icons/orc.png
+			skavens: team_icons/skaven.png
+			vampires: team_icons/vampire.png
+			pacte du chaos: team_icons/chaospact.png
+			slanns: team_icons/slanns.png
+			sous monde: team_icons/underworld.png

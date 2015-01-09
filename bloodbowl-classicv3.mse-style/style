@@ -1,0 +1,156 @@
+mse version: 2.0.0
+game: bloodbowl
+short name: Champions (V3)
+icon: card-icon.png
+position hint: 2
+installer group: bloodbowl/default
+
+depends on:
+	package: bloodbowl.mse-game
+	
+card width: 536
+card height: 750
+card dpi: 200
+
+card style:
+	card_name:
+		left: 98
+		top: 11
+		width: 343
+		height: 37
+		font:
+			name: Arial Black
+			size: { if card.name_length == "standard" then 32 else if card.name_length == "medium" then 24 else if card.name_length == "long" then 20 else if card.name_length == "megalong" then 16 }
+			color: rgb(255, 217, 0)
+		alignment: middle center
+		z index: 2
+	player_position:
+		left: 98
+		top: 55
+		width: 343
+		height: 37
+		font:
+			name: Arial Black
+			size: 14
+			color: rgb(255, 255, 255)
+		alignment: middle center
+		z index: 2
+	card_teams:
+		left: 386
+		top: 524
+		width: 133
+		height: 154
+		font:
+			name: Arial Black
+			size: 11
+			color: rgb(0, 0, 0)
+		alignment: top left force justify if-overflow
+		z index: 2
+	card_skills:
+		left: 17
+		top: 522
+		width: 348
+		height: 156
+		font:
+			name: Arial Black
+			size: 11
+			color: rgb(0, 0, 0)
+		alignment: top left force justify if-overflow
+		z index: 2
+	card_notes:
+		left: 17
+		top: 595
+		width: 348
+		height: 86
+		font:
+			name: Arial Black
+			size: 10
+			color: rgb(0, 0, 0)
+			style: italic
+		alignment: bottom left force justify if-overflow
+		z index: 3
+	img_description:
+		left: -30
+		top: 126
+		width: 465
+		height: 361
+		z index: 0
+	movement:
+		left: 387
+		top: 155
+		width: 131
+		height: 43
+		font:
+			name: Arial Black
+			size: 22
+			weight:bold
+			color: rgb(0, 0, 0)			
+		z index: 2
+		alignment: middle center
+	strength:
+		left: 387
+		top: 247
+		width: 131
+		height: 43
+		font:
+			name: Arial Black
+			size: 22
+			weight:bold
+			color: rgb(0, 0, 0)			
+		z index: 2
+		alignment: middle center
+	agility:
+		left: 387
+		top: 339
+		width: 131
+		height: 43
+		font:
+			name: Arial Black
+			size: 22
+			weight:bold
+			color: rgb(0, 0, 0)			
+		z index: 2
+		alignment: middle center
+	armor:
+		left: 387
+		top: 430
+		width: 131
+		height: 43
+		font:
+			name: Arial Black
+			size: 22
+			weight:bold
+			color: rgb(0, 0, 0)			
+		z index: 2
+		alignment: middle center
+	cost:
+		left: 17
+		top: 697
+		width: 499
+		height: 45
+		font:
+			name: Arial Black
+			size: 20
+			weight: bold
+			color: rgb(255, 217, 0)
+		z index: 2
+		alignment: middle center
+	card_type:
+		left:	0
+		top:	0
+		width:	536
+		height:	750
+		z index: 1
+		mask: mask.png
+		render style: image
+		popup style: in place
+		choice images:
+			standard: ChampionsClassicV3.png
+			bloody: ChampionsClassicV3.png
+	name_length:
+		left: 3
+		top: 3
+		width: 82
+		height: 82
+		z index: 2
+		render style: hidden
