@@ -1,0 +1,108 @@
+mse version: 2.0.0
+game: wquest
+short name: Dungeon Cards
+icon: icon.png
+position hint: 3
+installer group: wquest/default
+
+depends on:
+	package: wquest.mse-game
+	
+card width: 884
+card height: 1205
+card dpi: 300
+
+styling field:
+	type: choice
+	name: type_tile
+	description: Tile type
+	initial: square
+	choice: square
+	choice: obj8x4
+	choice: corridor6x2
+	choice: custom
+
+card style:
+	card_name:
+		left: 11
+		top: 11
+		width: 370
+		height: 212
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 42
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	special_rules:
+		left: 149
+		top: 31
+		width: 701
+		height: 782
+		alignment: top left
+		font:
+			name: Carlito
+			size: 28
+			color: rgb(0, 0, 0)
+		mask: textMask.png
+		z index: 1
+	card_type:
+		left: 45
+		top: 1060
+		width: 591
+		height: 91
+		angle: 90
+		alignment: top center
+		font:
+			name: Modern Antiqua
+			size: 36
+			color: rgb(0, 0, 0)
+			style: italic
+		z index: 1
+	img_description:
+		left: { if styling.type_tile == "square" then 482 else if styling.type_tile == "obj8x4" then 399 else if styling.type_tile == "corridor6x2" then 394 else 473 }
+		top: { if styling.type_tile == "square" then 832 else if styling.type_tile == "obj8x4" then 935 else if styling.type_tile == "corridor6x2" then 962 else 801 }
+		width: { if styling.type_tile == "square" then 333 else if styling.type_tile == "obj8x4" then 436 else if styling.type_tile == "corridor6x2" then 431 else 369 }
+		height: { if styling.type_tile == "square" then 333 else if styling.type_tile == "obj8x4" then 218 else if styling.type_tile == "corridor6x2" then 144 else 369 }
+		z index: 3
+####Extra Card Fields
+extra card field:
+	type: choice
+	name: bg_card
+	description: Card background
+	initial: grey
+	choice: grey
+	choice: green
+	choice: blue
+	choice: red
+extra card field:
+	type: choice
+	name: tile_border
+	initial: normal
+	choice: normal
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 884
+		height: 1205
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: { if styling.type_tile == "square" then "mask_square.png" else if styling.type_tile == "obj8x4" then "mask_obj8x4.png" else if styling.type_tile == "corridor6x2" then "mask_corridor6x2.png" else "mask_custom.png" }
+		choice images:
+			grey: bg_grey.png
+			green: bg_green.png
+			blue: bg_blue.png
+			red: bg_red.png
+	tile_border:
+		left: 362
+		top: 793
+		width: 522
+		height: 412
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			normal: { "border_" + styling.type_tile + ".png" }
