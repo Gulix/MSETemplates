@@ -89,6 +89,14 @@ card field:
 	multi line: true
 card field:
 	type: text
+	name: misc_infos
+	description: Infos supplémentaires
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
 	name: gold_value
 	description: Valeur
 card field:
