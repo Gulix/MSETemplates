@@ -1,0 +1,104 @@
+mse version: 2.0.0
+game: wquest
+short name: Magic items
+icon: icon.png
+position hint: 6
+installer group: wquest/default
+
+depends on:
+	package: wquest.mse-game
+	
+card width: 884
+card height: 1205
+card dpi: 300
+
+styling field:
+	type: choice
+	name: name_size
+	description: Size of the Name
+	initial: 40
+	choice: 40
+	choice: 48
+	choice: 36
+	choice: 30
+
+card style:
+	card_name:
+		left: 296
+		top: 45
+		width: 530
+		height: 117
+		alignment: middle right
+		font:
+			name: Modern Antiqua
+			size: {styling.name_size}
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	card_type:
+		left: 12
+		top: 12
+		width: 391
+		height: 113
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 30
+			color: rgb(0, 0, 0)
+			weight: bold
+			style: italic
+		z index: 2
+	special_rules:
+		left: 57
+		top: 180
+		width: 767
+		height: 820
+		alignment: top left
+		font:
+			name: Carlito
+			size: 28
+			color: rgb(0, 0, 0)
+		mask: textMask.png
+		z index: 1
+	misc_infos:
+		left: 45
+		top: 962
+		width: 419
+		height: 200
+		alignment: bottom right
+		font:
+			name: Carlito
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+	img_description:
+		left: 484
+		top: 788
+		width: 370
+		height: 387
+		z index: -1
+		
+extra card field:
+	type: choice
+	name: bg_card
+	description: Card background
+	initial: grey
+	choice: grey
+	choice: green
+	choice: yellow
+	choice: red
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 884
+		height: 1205
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			grey: magicItemCardGrey.png
+			green: magicItemCardGreen.png
+			red: magicItemCardRed.png
+			yellow: magicItemCardYellow.png
