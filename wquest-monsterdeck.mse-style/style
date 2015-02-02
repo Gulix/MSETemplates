@@ -20,8 +20,8 @@ card style:
 		height: 128
 		alignment: middle right
 		font:
-			name: Footlight MT Light
-			size: 48
+			name: Modern Antiqua
+			size: 42
 			color: rgb(0, 0, 0)
 			weight: bold
 		z index: 1
@@ -32,7 +32,7 @@ card style:
 		height: 922
 		alignment: top left
 		font:
-			name: Calibri
+			name: Carlito
 			size: 28
 			color: rgb(0, 0, 0)
 		mask: textMask.png
@@ -64,7 +64,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	movement:
@@ -74,7 +74,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	combat:
@@ -84,7 +84,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	shoot:
@@ -94,7 +94,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	strength:
@@ -104,7 +104,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	toughness:
@@ -114,7 +114,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	initiative:
@@ -124,7 +124,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	attacks:
@@ -134,7 +134,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	gold_value:
@@ -144,7 +144,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	armour:
@@ -154,7 +154,7 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)
 	damages:
@@ -164,6 +164,6 @@ card style:
 		height: 63
 		alignment: middle center
 		font:
-			name: Calibri
+			name: Carlito
 			size: 36
 			color: rgb(0, 0, 0)

@@ -20,8 +20,8 @@ card style:
 		height: 180
 		alignment: middle center
 		font:
-			name: Footlight MT Light
-			size: 60
+			name: Modern Antiqua
+			size: 48
 			color: rgb(0, 0, 0)
 		z index: 1
 	card_number:
@@ -31,7 +31,7 @@ card style:
 		height: 202
 		alignment: middle center
 		font:
-			name: Footlight MT Light
+			name: Modern Antiqua
 			size: 192
 			color: rgb(0, 0, 0)
 		z index: 1
@@ -42,7 +42,7 @@ card style:
 		height: 43
 		alignment: middle right
 		font:
-			name: Calibri
+			name: Carlito
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
