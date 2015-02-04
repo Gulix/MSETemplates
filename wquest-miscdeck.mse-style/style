@@ -8,8 +8,8 @@ installer group: wquest/default
 depends on:
 	package: wquest.mse-game
 	
-card width: 880
-card height: 1201
+card width: 884
+card height: 1205
 card dpi: 300
 
 card style:
@@ -61,23 +61,33 @@ card style:
 			color: rgb(0, 0, 0)
 			style: italic
 		z index: 1
-	img_bg:
-		left: 0
-		top: 0
-		width: 880
-		height: 1201
-		z index: 0
-		render style: image
-		popup style: in place
-		mask: mask.png
-		choice images:
-			basic: miscCard.png
-			variant1: miscCardv2.png
-			variant2: miscCardv3.png
-			variant3: miscCardv4.png
 	img_description:
 		left: 484
 		top: 788
 		width: 370
 		height: 387
 		z index: -1
+extra card field:
+	type: choice
+	name: bg_card
+	description: Card background
+	initial: grey
+	choice: grey
+	choice: green
+	choice: yellow
+	choice: red
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 884
+		height: 1205
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: mask.png
+		choice images:
+			grey: miscCard.png
+			green: miscCardv3.png
+			red: miscCardv4.png
+			yellow: miscCardv2.png
