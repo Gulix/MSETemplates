@@ -1,5 +1,6 @@
 mse version: 2.0.0
 game: sobah
+version: 1.0.1
 short name: DC Style
 full name: Dungeon Command Style
 icon: card-blank-icon.png
@@ -44,8 +45,6 @@ card style:
 			name: Calibri
 			size: 26
 			color: rgb(255, 255, 255)
-		symbol font:
-			name: sobah-symbols
 		z index: 1
 	books:
 		left: 101
