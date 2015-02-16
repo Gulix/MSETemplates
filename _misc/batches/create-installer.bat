@@ -1,6 +1,11 @@
 set version=1.0.1
+set listePckWQ=wquest.mse-game wquest-dungeondeck.mse-style wquest-eventdeck.mse-style wquest-magicitems.mse-style wquest-miscdeck.mse-style wquest-monsterdeck.mse-style
+mse.exe --create-installer wquest.%version%.mse-installer %listePckWQ%
 
-mse.exe --create-installer wquest.%version%.mse-installer wquest.mse-game
-mse.exe --create-installer bloodbowl.%version%.mse-installer bloodbowl.mse-game
-mse.exe --create-installer sobah.%version%.mse-installer sobah.mse-game
-mse.exe --create-installer gulixtemplates.%version%.mse-installer wquest.mse-game bloodbowl.mse-game sobah.mse-game
+set listePckBB=bloodbowl.mse-game bloodbowl-champions.mse-style bloodbowl-championsHD.mse-style bloodbowl-classicv3.mse-style bloodbowl-inducementscards.mse-style bloodbowl-inducementscardsHD.mse-style bloodbowl-specialinducementsHD.mse-style
+mse.exe --create-installer bloodbowl.%version%.mse-installer %listePckBB%
+
+set listePckSBH=sobah.mse-game sobah-default.mse-style sobah-magic.mse-game sobah-magic-default.mse-style
+mse.exe --create-installer sobah.%version%.mse-installer %listePckSBH%
+
+mse.exe --create-installer gulixtemplates.%version%.mse-installer %listePckSBH% %listePckBB% %listePckWQ%
