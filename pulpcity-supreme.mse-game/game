@@ -1,0 +1,211 @@
+﻿mse version: 2.0.0
+short name: Pulp City Supreme
+full name:  Pulp City Supreme Cards
+icon: pulp_city.jpg
+position hint: 1
+installer group: pulpcity/default
+version:1.0.0
+init script: include file: script
+
+card field:
+	type: text
+	name: supreme_name
+	description: Supreme Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: supreme_level
+	description: Level
+card field:
+	type: text
+	name: supreme_factions
+	description: Factions
+card field:
+	type: text
+	name: supreme_tags
+	description: Tags
+card field:
+	type: text
+	name: action_points_limit
+	description: Limit of AP
+	script: only_numbers(value)
+card field:
+	type: text
+	name: action_points_added
+	description: AP+
+	script: only_numbers(value)
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	save value: true
+card field:
+	type: choice
+	name: hit_points_image
+	description: Hit points
+	initial: 2
+	choice: 0
+	choice: 1
+	choice: 2
+	choice: 3
+	choice: 4
+	choice: 5
+	choice: 6
+	choice: 7
+	choice: 8
+	choice: 9
+	choice: 10
+	choice: 11
+	choice: 12
+	choice: 13
+	choice: 14
+	choice: 15
+	choice: 16
+card field:
+	type: choice
+	name: strength_trait
+	description: Strength trait
+	initial: no_trump
+	choice: no_trump
+	choice: trump
+card field:
+	type: text
+	name: strength_value
+	description: Strength
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: defense_trait
+	description: Defense trait
+	initial: no_trump
+	choice: no_trump
+	choice: trump
+card field:
+	type: text
+	name: defense_value
+	description: Defense
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: energy_trait
+	description: Energy trait
+	initial: no_trump
+	choice: no_trump
+	choice: trump
+card field:
+	type: text
+	name: energy_value
+	description: Energy
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: agility_trait
+	description: Agility trait
+	initial: no_trump
+	choice: no_trump
+	choice: trump
+card field:
+	type: text
+	name: agility_value
+	description: Agility
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: mind_trait
+	description: Mind trait
+	initial: no_trump
+	choice: no_trump
+	choice: trump
+card field:
+	type: text
+	name: mind_value
+	description: Mind
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: spirit_trait
+	description: Spirit trait
+	initial: no_trump
+	choice: no_trump
+	choice: trump
+card field:
+	type: text
+	name: spirit_value
+	description: Spirit
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: hero_affiliation
+	description: Hero
+	initial: hero
+	choice: hero
+	choice: not_hero
+card field:
+	type: choice
+	name: villain_affiliation
+	description: Villain
+	initial: villain
+	choice: villain
+	choice: not_villain
+card field:
+	type: choice
+	name: supreme_origin
+	description: Supreme's origin
+	initial: science
+	choice: science
+	choice: nature
+	choice: mystery
+card field:
+	type: text
+	name: supreme_actions
+	description: Actions
+	multi line: true
+card field:
+	type: text
+	name: supreme_powers
+	description: Powers
+	multi line: true
+card field:
+	type: choice
+	name: freelancer
+	description: Freelancer
+	initial: not_freelancer
+	choice: freelancer
+	choice: not_freelancer
+card field:
+	type: choice
+	name: movement_type
+	description: type of movement
+	initial: sprint
+	choice: immobile
+	choice: sprint
+	choice: bounding
+	choice: blink
+	choice: flight
+	choice: wall_crawling
+card field:
+	type: text
+	name: movement_value
+	description: Movement
+	script: only_numbers(value)
+card field:
+	type: text
+	name: movement_special
+	description: Movement (special)
+card field:
+	type: multiple choice
+	name: elements
+	description: Elements
+	editable: true
+	show statistics: true
+	card list visible: false
+	card list allow: false
+	choice: air
+	choice: water
+	choice: fire
+	choice: earth
+	choice: light
+	choice: darkness

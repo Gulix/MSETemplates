@@ -1,0 +1,454 @@
+mse version: 2.0.0
+game: pulpcity-supreme
+short name: Supreme 'Classic'
+icon: pulp_city.jpg
+position hint: 1
+installer group: pulpcity/default
+version:1.0.0
+depends on:
+	package: pulpcity-supreme.mse-game
+depends on:
+	package: pulpcity-icons.mse-symbol-font
+	
+card width: 700
+card height: 974
+card dpi: 214
+
+styling field:
+	type: choice
+	name: card_language
+	description: Card language
+	initial: blank
+	choice: blank
+	choice: english
+	choice: francais
+styling field:
+	type: choice
+	name: name_font_size
+	description: Font size for the Name
+	initial: 44
+	choice: 44
+	choice: 40
+	choice: 36
+	choice: 32
+styling field:
+	type: choice
+	name: actions_font_size
+	description: Font size for the Actions section
+	initial: 14
+	choice: 12
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: powers_font_size
+	description: Font size for the Powers section
+	initial: 14
+	choice: 12
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: actions_symbols_size
+	description: Symbols size for the Actions section
+	initial: 16
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: powers_symbols_size
+	description: Symbols size for the Powers section
+	initial: 16
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+card style:
+	supreme_name:
+		left: 285
+		top: 26
+		width: 405
+		height: 85
+		alignment: top center
+		font:
+			name: Impact
+			size: { styling.name_font_size }
+			color: rgb(0, 0, 0)
+		z index: 1
+		angle: 3
+	action_points_limit:
+		left: 41
+		top: 166
+		width: 25
+		height: 39
+		alignment: middle center
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 224, 81)
+		z index: 1
+	action_points_added:
+		left: 42
+		top: 231
+		width: 25
+		height: 39
+		alignment: middle center
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 224, 81)
+		z index: 1
+	supreme_tags:
+		left: 277
+		top: 158
+		width: 320
+		height: 29
+		alignment: middle left
+		font:
+			name: Impact
+			size: 20
+			color: rgb(144, 143, 159)
+		z index: 1
+	supreme_level:
+		left: 328
+		top: 124
+		width: 20
+		height: 26
+		alignment: middle left
+		font:
+			name: Impact
+			size: 20
+			color: rgb(240, 240, 240)
+		z index: 1
+	supreme_factions:
+		left: 350
+		top: 122
+		width: 275
+		height: 26
+		alignment: middle left
+		font:
+			name: Impact
+			size: 20
+			color: rgb(240, 240, 240)
+		z index: 3
+	freelancer:
+		left: 568
+		top: 102
+		width: 42
+		height: 53
+		z index: 2
+		render style: image
+		popup style: in place
+		choice images:
+			freelancer: freelancer_yes.png
+			not_freelancer: freelancer_no.png
+	img_description:
+		left: 2
+		top: 0
+		width: 287
+		height: 255
+		z index: -1
+	hit_points_image:
+		left: 281
+		top: 193
+		width: 299
+		height: 104
+		z index: 1
+		render style: image
+		popup style: in place
+		mask: hpMask.png
+		choice images:
+			0: hp00.png
+			1: hp01.png
+			2: hp02.png
+			3: hp03.png
+			4: hp04.png
+			5: hp05.png
+			6: hp06.png
+			7: hp07.png
+			8: hp08.png
+			9: hp09.png
+			10: hp10.png
+			11: hp11.png
+			12: hp12.png
+			13: hp13.png
+			14: hp14.png
+			15: hp15.png
+			16: hp16.png
+	strength_trait:
+		left: 610
+		top: 206
+		width: 43
+		height: 43
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			no_trump: strength_notrump.png
+			trump: strength_trump.png
+	strength_value:
+		left: 653
+		top: 204
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: { if (card.strength_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
+	defense_trait:
+		left: 610
+		top: 254
+		width: 43
+		height: 43
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			no_trump: defense_notrump.png
+			trump: defense_trump.png
+	defense_value:
+		left: 653
+		top: 252
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: { if (card.defense_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
+	energy_trait:
+		left: 610
+		top: 305
+		width: 43
+		height: 43
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			no_trump: energy_notrump.png
+			trump: energy_trump.png
+	energy_value:
+		left: 653
+		top: 303
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: { if (card.energy_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
+	agility_trait:
+		left: 613
+		top: 355
+		width: 43
+		height: 43
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			no_trump: agility_notrump.png
+			trump: agility_trump.png
+	agility_value:
+		left: 656
+		top: 352
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: { if (card.agility_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
+	mind_trait:
+		left: 613
+		top: 405
+		width: 43
+		height: 43
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			no_trump: mind_notrump.png
+			trump: mind_trump.png
+	mind_value:
+		left: 656
+		top: 403
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: { if (card.mind_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
+	spirit_trait:
+		left: 615
+		top: 455
+		width: 43
+		height: 43
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			no_trump: spirit_notrump.png
+			trump: spirit_trump.png
+	spirit_value:
+		left: 658
+		top: 453
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: { if (card.spirit_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
+	hero_affiliation:
+		left: 504
+		top: 912
+		width: 60
+		height: 58
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			hero: hero_on.png
+			not_hero: hero_off.png
+	villain_affiliation:
+		left: 563
+		top: 913
+		width: 57
+		height: 58
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			villain: villain_on.png
+			not_villain: villain_off.png
+	movement_type:
+		left: 609
+		top: 102
+		width: 91
+		height: 98
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			immobile: movement_immobile.png
+			sprint: movement_sprint.png
+			bounding: movement_bounding.png
+			blink: movement_blink.png
+			flight: movement_flight.png
+			wall_crawling: movement_wall_crawling.png
+	movement_value:
+		left: { if (card.movement_type == "immobile") then 702 else 676 }
+		top: 136
+		width: { if (card.movement_type == "immobile") then 0 else 26 }
+		height: 42
+		alignment: middle center
+		z index: 4
+		font:
+			name: Impact
+			size: 24
+			color: rgb(255, 255, 255)
+	movement_special:
+		left: 612
+		top: 178
+		width: 88
+		height: 19
+		alignment: middle center
+		z index: 4
+		font:
+			name: Impact
+			size: 16
+			color: rgb(255, 255, 255)
+	supreme_origin:
+		left: 620
+		top: 522
+		width: 80
+		height: 452
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			mystery: origin_mystery.png
+			science: origin_science.png
+			nature: origin_nature.png
+	supreme_actions:
+		left: 35
+		top: 295
+		width: 611
+		height: 439
+		alignment: top left force justify if-overflow
+		z index: 2
+		font:
+			name: Komika Text Kaps
+			size: { styling.actions_font_size }
+			color: rgb(0, 0, 0)
+		symbol font:
+			name: pulpcity-icons
+			size: { styling.actions_symbols_size }
+	supreme_powers:
+		left: 35
+		top: 471
+		width: 611
+		height: 439
+		alignment: bottom left force justify if-overflow
+		z index: 1
+		font:
+			name: Komika Text Kaps
+			size: { styling.actions_font_size }
+			color: rgb(0, 0, 0)
+		symbol font:
+			name: pulpcity-icons
+			size: { styling.actions_symbols_size }
+	elements:
+		left: 73
+		top: 238
+		width: 210
+		height: 58
+		z index: 3
+		alignment: top left
+		render style: image list
+		choice images:
+			air: elements_air.png
+			water: elements_water.png
+			earth: elements_earth.png
+			fire: elements_fire.png
+			light: elements_light.png
+			darkness: elements_darkness.png
+extra card field:
+	type: choice
+	name: bg_card
+	initial: normal
+	choice: normal
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 700
+		height: 974
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			normal: { "card_normal" + (if (styling.card_language == "english") then "_en" else if (styling.card_language == "francais") then "_fr") + ".png" }

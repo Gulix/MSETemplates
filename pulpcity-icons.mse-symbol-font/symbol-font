@@ -1,0 +1,49 @@
+mse version: 2.0.0
+short name: Pulp City symbols
+icon: pulp_city.jpg
+position hint: 1
+installer group: pulpcity/default
+version:1.0.0
+image font size: 20
+horizontal space: 2
+symbol:
+	code: /ST
+	image: traits_strength.png
+	image font size: 20
+symbol:
+	code: /DF
+	image: traits_defense.png
+	image font size: 20
+symbol:
+	code: /AG
+	image: traits_agility.png
+	image font size: 20
+symbol:
+	code: /EN
+	image: traits_energy.png
+	image font size: 20
+symbol:
+	code: /MN
+	image: traits_mind.png
+	image font size: 20
+symbol:
+	code: /SP
+	image: traits_spirit.png
+	image font size: 20
+symbol:
+	code: /HERO
+	image: hero.png
+	image font size: 20
+symbol:
+	code: /VILLAIN
+	image: villain.png
+	image font size: 20
+insert symbol menu:
+	item: /ST
+	item: /DF
+	item: /AG
+	item: /EN
+	item: /MN
+	item: /SP
+	item: /HERO
+	item: /VILLAIN
