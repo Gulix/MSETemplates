@@ -68,8 +68,8 @@ card field:
 	type: choice
 	name: strength_trait
 	description: Strength trait
-	initial: no_trump
-	choice: no_trump
+	initial: normal
+	choice: normal
 	choice: trump
 card field:
 	type: text
@@ -80,8 +80,8 @@ card field:
 	type: choice
 	name: defense_trait
 	description: Defense trait
-	initial: no_trump
-	choice: no_trump
+	initial: normal
+	choice: normal
 	choice: trump
 card field:
 	type: text
@@ -92,8 +92,8 @@ card field:
 	type: choice
 	name: energy_trait
 	description: Energy trait
-	initial: no_trump
-	choice: no_trump
+	initial: normal
+	choice: normal
 	choice: trump
 card field:
 	type: text
@@ -104,8 +104,8 @@ card field:
 	type: choice
 	name: agility_trait
 	description: Agility trait
-	initial: no_trump
-	choice: no_trump
+	initial: normal
+	choice: normal
 	choice: trump
 card field:
 	type: text
@@ -116,8 +116,8 @@ card field:
 	type: choice
 	name: mind_trait
 	description: Mind trait
-	initial: no_trump
-	choice: no_trump
+	initial: normal
+	choice: normal
 	choice: trump
 card field:
 	type: text
@@ -128,8 +128,8 @@ card field:
 	type: choice
 	name: spirit_trait
 	description: Spirit trait
-	initial: no_trump
-	choice: no_trump
+	initial: normal
+	choice: normal
 	choice: trump
 card field:
 	type: text
@@ -140,16 +140,16 @@ card field:
 	type: choice
 	name: hero_affiliation
 	description: Hero
-	initial: hero
-	choice: hero
-	choice: not_hero
+	initial: yes
+	choice: yes
+	choice: no
 card field:
 	type: choice
 	name: villain_affiliation
 	description: Villain
-	initial: villain
-	choice: villain
-	choice: not_villain
+	initial: yes
+	choice: yes
+	choice: no
 card field:
 	type: choice
 	name: supreme_origin
@@ -172,9 +172,9 @@ card field:
 	type: choice
 	name: freelancer
 	description: Freelancer
-	initial: not_freelancer
-	choice: freelancer
-	choice: not_freelancer
+	initial: no
+	choice: yes
+	choice: no
 card field:
 	type: choice
 	name: movement_type

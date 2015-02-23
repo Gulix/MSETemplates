@@ -154,8 +154,8 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			freelancer: freelancer_yes.png
-			not_freelancer: freelancer_no.png
+			yes: freelancer_yes.png
+			no: freelancer_no.png
 	img_description:
 		left: 2
 		top: 0
@@ -198,7 +198,7 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			no_trump: strength_notrump.png
+			normal: strength_notrump.png
 			trump: strength_trump.png
 	strength_value:
 		left: 653
@@ -220,7 +220,7 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			no_trump: defense_notrump.png
+			normal: defense_notrump.png
 			trump: defense_trump.png
 	defense_value:
 		left: 653
@@ -242,7 +242,7 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			no_trump: energy_notrump.png
+			normal: energy_notrump.png
 			trump: energy_trump.png
 	energy_value:
 		left: 653
@@ -264,7 +264,7 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			no_trump: agility_notrump.png
+			normal: agility_notrump.png
 			trump: agility_trump.png
 	agility_value:
 		left: 656
@@ -286,7 +286,7 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			no_trump: mind_notrump.png
+			normal: mind_notrump.png
 			trump: mind_trump.png
 	mind_value:
 		left: 656
@@ -308,7 +308,7 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			no_trump: spirit_notrump.png
+			normal: spirit_notrump.png
 			trump: spirit_trump.png
 	spirit_value:
 		left: 658
@@ -330,8 +330,8 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			hero: hero_on.png
-			not_hero: hero_off.png
+			yes: hero_on.png
+			no: hero_off.png
 	villain_affiliation:
 		left: 563
 		top: 913
@@ -341,8 +341,8 @@ card style:
 		render style: image
 		popup style: in place
 		choice images:
-			villain: villain_on.png
-			not_villain: villain_off.png
+			yes: villain_on.png
+			no: villain_off.png
 	movement_type:
 		left: 609
 		top: 102
