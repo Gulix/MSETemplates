@@ -1,0 +1,58 @@
+﻿mse version: 2.0.0
+short name: Pulp City Cards
+full name:  Pulp City Misc Cards
+icon: pulp_city.jpg
+position hint: 2
+installer group: pulpcity/Misc cards
+version:1.1.0
+init script: include file: script
+
+card field:
+	type: text
+	name: name
+	description: Card Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: subname
+	description: Card Sub-Name
+	card list column: 2
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: title_1
+card field:
+	type: text
+	name: informations_1
+	description: Informations #1
+	multi line: true
+card field:
+	type: text
+	name: title_2
+card field:
+	type: text
+	name: informations_2
+	description: Informations #2
+	multi line: true
+card field:
+	type: text
+	name: title_3
+card field:
+	type: text
+	name: informations_3
+	description: Informations #3
+	multi line: true
+card field:
+	type: text
+	name: description
+	description: Description
+	multi line: true
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	save value: true

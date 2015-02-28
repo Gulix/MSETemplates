@@ -1,0 +1,147 @@
+mse version: 2.0.0
+game: pulpcity-cards
+short name: Agendas Cards
+icon: pulp_city.jpg
+position hint: 2
+installer group: pulpcity/Agendas Cards
+version: 1.1.0
+depends on:
+	package: pulpcity-cards.mse-game
+depends on:
+	package: pulpcity-icons.mse-symbol-font
+	
+card width: 790
+card height: 974
+card dpi: 214
+
+card style:
+	name:
+		left: 0
+		top: 124
+		width: 790
+		height: 51
+		alignment: middle center
+		angle: 2
+		font:
+			name: Impact
+			size: 40
+			color: rgb(255, 255, 255)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: -2
+			shadow displacement y: 2
+			shadow blur: 8
+		z index: 1
+	subname:
+		left: 0
+		top: 179
+		width: 790
+		height: 30
+		alignment: middle center
+		angle: 2
+		font:
+			name: Impact
+			size: 24
+			color: rgb(255, 255, 255)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: -2
+			shadow displacement y: 2
+			shadow blur: 6
+		z index: 1
+	title_1:
+		left: 134
+		top: 238
+		width: 640
+		height: 35
+		alignment: top left force justify if-overflow
+		z index: 1
+		font:
+			name: Impact
+			size: 24
+			color: rgb(0, 0, 0)
+	informations_1:
+		left: 134
+		top: 273
+		width: 640
+		height: 176
+		alignment: top left force justify if-overflow
+		z index: 1
+		font:
+			name: Komika Text Kaps
+			size: 16
+			color: rgb(0, 0, 0)
+		symbol font:
+			name: pulpcity-icons
+			size: 20
+	title_2:
+		left: 20
+		top: 477
+		width: 640
+		height: 35
+		alignment: top left force justify if-overflow
+		z index: 1
+		font:
+			name: Impact
+			size: 24
+			color: rgb(0, 0, 0)
+	informations_2:
+		left: 20
+		top: 512
+		width: 640
+		height: 176
+		alignment: top left force justify if-overflow
+		z index: 1
+		font:
+			name: Komika Text Kaps
+			size: 16
+			color: rgb(0, 0, 0)
+		symbol font:
+			name: pulpcity-icons
+			size: 20
+	title_3:
+		left: 134
+		top: 744
+		width: 640
+		height: 35
+		alignment: top left force justify if-overflow
+		z index: 1
+		font:
+			name: Impact
+			size: 24
+			color: rgb(0, 0, 0)
+	informations_3:
+		left: 134
+		top: 779
+		width: 640
+		height: 176
+		alignment: top left force justify if-overflow
+		z index: 1
+		font:
+			name: Komika Text Kaps
+			size: 16
+			color: rgb(0, 0, 0)
+		symbol font:
+			name: pulpcity-icons
+			size: 20
+	img_description:
+		left: 0
+		top: 0
+		width: 790
+		height: 155
+		z index: -1
+extra card field:
+	type: choice
+	name: bg_card
+	initial: normal
+	choice: normal
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 790
+		height: 974
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_agenda_mask.png
+		choice images:
+			normal: card_agenda.png

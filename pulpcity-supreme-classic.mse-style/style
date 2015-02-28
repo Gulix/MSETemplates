@@ -3,8 +3,8 @@ game: pulpcity-supreme
 short name: Supreme 'Classic'
 icon: pulp_city.jpg
 position hint: 1
-installer group: pulpcity/default
-version:1.0.0
+installer group: pulpcity/Supreme style 'Classic'
+version:1.1.0
 depends on:
 	package: pulpcity-supreme.mse-game
 depends on:
@@ -77,6 +77,13 @@ styling field:
 	choice: 20
 	choice: 22
 	choice: 24
+styling field:
+	type: choice
+	name: hp_with_numbers
+	description: Display numbers for the HP
+	initial: yes
+	choice: yes
+	choice: no
 card style:
 	supreme_name:
 		left: 285
@@ -173,22 +180,22 @@ card style:
 		mask: hpMask.png
 		choice images:
 			0: hp00.png
-			1: hp01.png
-			2: hp02.png
-			3: hp03.png
-			4: hp04.png
-			5: hp05.png
-			6: hp06.png
-			7: hp07.png
-			8: hp08.png
-			9: hp09.png
-			10: hp10.png
-			11: hp11.png
-			12: hp12.png
-			13: hp13.png
-			14: hp14.png
-			15: hp15.png
-			16: hp16.png
+			1: { "hp01" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			2: { "hp02" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			3: { "hp03" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			4: { "hp04" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			5: { "hp05" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			6: { "hp06" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			7: { "hp07" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			8: { "hp08" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			9: { "hp09" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			10: { "hp10" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			11: { "hp11" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			12: { "hp12" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			13: { "hp13" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			14: { "hp14" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			15: { "hp15" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			16: { "hp16" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
 	strength_trait:
 		left: 610
 		top: 206
@@ -357,7 +364,7 @@ card style:
 			bounding: movement_bounding.png
 			blink: movement_blink.png
 			flight: movement_flight.png
-			wall_crawling: movement_wall_crawling.png
+			wallcrawling: movement_wall_crawling.png
 	movement_value:
 		left: { if (card.movement_type == "immobile") then 702 else 676 }
 		top: 136

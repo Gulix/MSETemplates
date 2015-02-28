@@ -3,8 +3,8 @@ short name: Pulp City Supreme
 full name:  Pulp City Supreme Cards
 icon: pulp_city.jpg
 position hint: 1
-installer group: pulpcity/default
-version:1.0.0
+installer group: pulpcity/Supremes
+version:1.1.0
 init script: include file: script
 
 card field:
@@ -185,7 +185,7 @@ card field:
 	choice: bounding
 	choice: blink
 	choice: flight
-	choice: wall_crawling
+	choice: wallcrawling
 card field:
 	type: text
 	name: movement_value
