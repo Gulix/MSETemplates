@@ -4,6 +4,7 @@ Cartes de Supremes pour Pulp City, aspect "classique"
 
 Polices nécessaires :
  - Komika Text Kaps : http://www.dafont.com/fr/komika-text.font
+ - Komika Display Tight : http://www.dafont.com/fr/komika-display.font
  - Impact : http://www.fontpalace.com/font-details/Impact/
 
 ------------------------------------
@@ -14,4 +15,5 @@ Polices nécessaires :
 
 Fonts required :
  - Komika Text Kaps : http://www.dafont.com/fr/komika-text.font
+ - Komika Display Tight : http://www.dafont.com/fr/komika-display.font
  - Impact : http://www.fontpalace.com/font-details/Impact/
