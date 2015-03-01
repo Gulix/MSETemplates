@@ -410,6 +410,7 @@ card style:
 			name: Komika Text Kaps
 			size: { styling.actions_font_size }
 			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
 		symbol font:
 			name: pulpcity-icons
 			size: { styling.actions_symbols_size }
@@ -422,11 +423,12 @@ card style:
 		z index: 1
 		font:
 			name: Komika Text Kaps
-			size: { styling.actions_font_size }
+			size: { styling.powers_font_size }
 			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
 		symbol font:
 			name: pulpcity-icons
-			size: { styling.actions_symbols_size }
+			size: { styling.powers_symbols_size }
 	elements:
 		left: 73
 		top: 238
