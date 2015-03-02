@@ -4,7 +4,7 @@ short name: Plots Cards
 icon: pulp_city.jpg
 position hint: 1
 installer group: pulpcity/Plots Cards
-version: 1.1.0
+version: 1.1.1
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:

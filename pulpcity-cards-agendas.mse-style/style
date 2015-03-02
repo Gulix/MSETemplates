@@ -4,7 +4,7 @@ short name: Agendas Cards
 icon: pulp_city.jpg
 position hint: 2
 installer group: pulpcity/Agendas Cards
-version: 1.1.0
+version: 1.1.1
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:
