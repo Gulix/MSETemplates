@@ -69,6 +69,7 @@ card style:
 			name: Komika Text Kaps
 			size: 16
 			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
 		symbol font:
 			name: pulpcity-icons
 			size: 20
@@ -94,6 +95,7 @@ card style:
 			name: Komika Text Kaps
 			size: 16
 			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
 		symbol font:
 			name: pulpcity-icons
 			size: 20
@@ -119,6 +121,7 @@ card style:
 			name: Komika Text Kaps
 			size: 16
 			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
 		symbol font:
 			name: pulpcity-icons
 			size: 20
