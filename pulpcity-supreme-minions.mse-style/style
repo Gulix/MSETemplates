@@ -1,0 +1,405 @@
+mse version: 2.0.0
+game: pulpcity-supreme
+short name: Minions
+icon: pulp_city.jpg
+position hint: 3
+installer group: pulpcity/Minions cards
+version:1.2.0
+depends on:
+	package: pulpcity-supreme.mse-game
+depends on:
+	package: pulpcity-icons.mse-symbol-font
+	
+card width: 700
+card height: 974
+card dpi: 214
+
+styling field:
+	type: choice
+	name: card_language
+	description: Card language
+	initial: english
+	choice: english
+	choice: francais
+styling field:
+	type: choice
+	name: name_font_size
+	description: Font size for the Name
+	initial: 44
+	choice: 44
+	choice: 40
+	choice: 36
+	choice: 32
+styling field:
+	type: choice
+	name: actions_font_size
+	description: Font size for the Actions section
+	initial: 14
+	choice: 12
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: powers_font_size
+	description: Font size for the Powers section
+	initial: 14
+	choice: 12
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: actions_symbols_size
+	description: Symbols size for the Actions section
+	initial: 16
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: powers_symbols_size
+	description: Symbols size for the Powers section
+	initial: 16
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+styling field:
+	type: choice
+	name: hp_with_numbers
+	description: Display numbers for the HP
+	initial: yes
+	choice: yes
+	choice: no
+card style:
+	supreme_name:
+		left: 285
+		top: 26
+		width: 405
+		height: 85
+		alignment: top center
+		font:
+			name: Impact
+			size: { styling.name_font_size }
+			color: rgb(0, 0, 0)
+		z index: 1
+		angle: 3
+	supreme_tags:
+		left: 277
+		top: 158
+		width: 320
+		height: 29
+		alignment: middle left
+		font:
+			name: Impact
+			size: 20
+			color: rgb(144, 143, 159)
+		z index: 1
+	supreme_level:
+		left: 328
+		top: 124
+		width: 20
+		height: 26
+		alignment: middle left
+		font:
+			name: Impact
+			size: 20
+			color: rgb(240, 240, 240)
+		z index: 1
+	supreme_factions:
+		left: 350
+		top: 122
+		width: 275
+		height: 26
+		alignment: middle left
+		font:
+			name: Impact
+			size: 20
+			color: rgb(240, 240, 240)
+		z index: 3
+	img_description:
+		left: 2
+		top: 0
+		width: 287
+		height: 255
+		z index: -1
+	hit_points_image:
+		left: 281
+		top: 193
+		width: 299
+		height: 104
+		z index: 1
+		render style: image
+		popup style: in place
+		mask: hpMask.png
+		choice images:
+			0: hp00.png
+			1: { "hp01" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			2: { "hp02" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			3: { "hp03" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			4: { "hp04" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			5: { "hp05" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			6: { "hp06" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			7: { "hp07" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			8: { "hp08" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			9: { "hp09" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			10: { "hp10" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			11: { "hp11" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			12: { "hp12" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			13: { "hp13" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			14: { "hp14" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			15: { "hp15" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			16: { "hp16" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+	strength_value:
+		left: 653
+		top: 204
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 255, 255)
+	defense_value:
+		left: 653
+		top: 252
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 255, 255)
+	energy_value:
+		left: 653
+		top: 303
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 255, 255)
+	agility_value:
+		left: 656
+		top: 352
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 255, 255)
+	mind_value:
+		left: 656
+		top: 403
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 255, 255)
+	spirit_value:
+		left: 658
+		top: 453
+		width: 45
+		height: 46
+		alignment: middle center
+		z index: 1
+		font:
+			name: Impact
+			size: 28
+			color: rgb(255, 255, 255)
+	hero_affiliation:
+		left: 513
+		top: 907
+		width: 55
+		height: 55
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			yes: hero_on.png
+			no: hero_off.png
+	villain_affiliation:
+		left: 568
+		top: 908
+		width: 55
+		height: 50
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			yes: villain_on.png
+			no: villain_off.png
+	movement_type:
+		left: 609
+		top: 102
+		width: 91
+		height: 98
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			immobile: movement_immobile.png
+			sprint: movement_sprint.png
+			bounding: movement_bounding.png
+			blink: movement_blink.png
+			flight: movement_flight.png
+			wallcrawling: movement_wall_crawling.png
+	movement_value:
+		left: { if (card.movement_type == "immobile") then 702 else 676 }
+		top: 136
+		width: { if (card.movement_type == "immobile") then 0 else 26 }
+		height: 42
+		alignment: middle center
+		z index: 4
+		font:
+			name: Impact
+			size: 24
+			color: rgb(255, 255, 255)
+	movement_special:
+		left: 612
+		top: 178
+		width: 88
+		height: 19
+		alignment: middle center
+		z index: 4
+		font:
+			name: Impact
+			size: 16
+			color: rgb(255, 255, 255)
+	supreme_actions:
+		left: 35
+		top: 295
+		width: 611
+		height: 439
+		alignment: top left force justify if-overflow
+		z index: 2
+		font:
+			name: Komika Text Kaps
+			size: { styling.actions_font_size }
+			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
+		symbol font:
+			name: pulpcity-icons
+			size: { styling.actions_symbols_size }
+		mask: actions_mask.png
+	supreme_powers:
+		left: 35
+		top: 471
+		width: 611
+		height: 430
+		alignment: bottom left force justify if-overflow
+		z index: 1
+		font:
+			name: Komika Text Kaps
+			size: { styling.powers_font_size }
+			color: rgb(0, 0, 0)
+			italic name: Komika Display Tight
+		symbol font:
+			name: pulpcity-icons
+			size: { styling.powers_symbols_size }
+		mask: {if (card.is_exclusive) then "powers_exclusive_mask.png" else "powers_mask.png" }
+	elements:
+		left: 73
+		top: 238
+		width: 210
+		height: 58
+		z index: 3
+		alignment: top left
+		render style: image list
+		choice images:
+			air: elements_air.png
+			water: elements_water.png
+			earth: elements_earth.png
+			fire: elements_fire.png
+			light: elements_light.png
+			darkness: elements_darkness.png
+	minions_start_number:
+		left: 3
+		top: 161
+		width: 67
+		height: 45
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			0: nb_start_0.png
+			1: nb_start_1.png
+			2: nb_start_2.png
+			3: nb_start_3.png
+			4: nb_start_4.png
+			5: nb_start_5.png
+	minions_additional_number:
+		left: 0
+		top: 224
+		width: 73
+		height: 45
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			0: nb_add_0.png
+			1: nb_add_1.png
+			2: nb_add_2.png
+			3: nb_add_3.png
+			4: nb_add_4.png
+			5: nb_add_5.png
+	is_exclusive:
+		left: 387
+		top: 761
+		width: 313
+		height: 139
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			yes: { "exclusive" + (if (styling.card_language == "english") then "_en" else if (styling.card_language == "francais") then "_fr") + ".png" }
+			no: exclusive_not.png
+	info_exclusive:
+		left: 431
+		top: 835
+		width: 266
+		height: 37
+		alignment: middle left
+		z index: 4
+		font:
+			name: Impact
+			size: 18
+			color: rgb(0, 0, 0)
+extra card field:
+	type: choice
+	name: bg_card
+	initial: normal
+	choice: normal
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 700
+		height: 974
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			normal: { "card_minions" + (if (styling.card_language == "english") then "_en" else if (styling.card_language == "francais") then "_fr") + ".png" }
