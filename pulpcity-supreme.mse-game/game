@@ -209,3 +209,36 @@ card field:
 	choice: earth
 	choice: light
 	choice: darkness
+card field:
+	type: choice
+	name: minions_start_number
+	description: Number of Minions
+	initial: 0
+	choice: 1
+	choice: 2
+	choice: 3
+	choice: 4
+	choice: 5
+	choice: 0
+card field:
+	type: choice
+	name: minions_additional_number
+	description: Additional number of Minions
+	initial: 0
+	choice: 1
+	choice: 2
+	choice: 3
+	choice: 4
+	choice: 5
+	choice: 0
+card field:
+	type: choice
+	name: is_exclusive
+	description: Is exclusive ?
+	initial: no
+	choice: yes
+	choice: no
+card field:
+	type: text
+	name: info_exclusive
+	description: Exclusive item
