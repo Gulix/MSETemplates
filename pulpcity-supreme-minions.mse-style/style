@@ -308,8 +308,8 @@ card style:
 		top: 471
 		width: 611
 		height: 430
-		alignment: bottom left force justify if-overflow
-		z index: 1
+		alignment: bottom left
+		z index: 3
 		font:
 			name: Komika Text Kaps
 			size: { styling.powers_font_size }
@@ -318,7 +318,7 @@ card style:
 		symbol font:
 			name: pulpcity-icons
 			size: { styling.powers_symbols_size }
-		mask: {if (card.is_exclusive) then "powers_exclusive_mask.png" else "powers_mask.png" }
+		mask: powers_mask.png
 	elements:
 		left: 73
 		top: 238
@@ -365,27 +365,39 @@ card style:
 			4: nb_add_4.png
 			5: nb_add_5.png
 	is_exclusive:
-		left: 387
-		top: 761
-		width: 313
-		height: 139
-		z index: 3
+		left: 73
+		top: 883
+		width: 440
+		height: 91
+		z index: 2
 		render style: image
 		popup style: in place
 		choice images:
 			yes: { "exclusive" + (if (styling.card_language == "english") then "_en" else if (styling.card_language == "francais") then "_fr") + ".png" }
 			no: exclusive_not.png
 	info_exclusive:
-		left: 431
-		top: 835
-		width: 266
-		height: 37
-		alignment: middle left
+		left: 335
+		top: 931
+		width: 154
+		height: 38
+		alignment: center
+		angle: 9
 		z index: 4
 		font:
 			name: Impact
-			size: 18
+			size: 22
 			color: rgb(0, 0, 0)
+	is_unique:
+		left: 0
+		top: 204
+		width: 88
+		height: 20
+		z index: 3
+		render style: image
+		popup style: in place
+		choice images:
+			yes: unique.png
+			no: unique_not.png
 extra card field:
 	type: choice
 	name: bg_card
