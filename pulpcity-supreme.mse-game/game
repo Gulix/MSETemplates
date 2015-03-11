@@ -242,3 +242,10 @@ card field:
 	type: text
 	name: info_exclusive
 	description: Exclusive item
+card field:
+	type: choice
+	name: is_unique
+	description: Is unique ?
+	initial: no
+	choice: yes
+	choice: no
