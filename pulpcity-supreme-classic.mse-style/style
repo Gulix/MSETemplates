@@ -4,7 +4,7 @@ short name: Supreme 'Classic'
 icon: pulp_city.jpg
 position hint: 1
 installer group: pulpcity/Supreme style 'Classic'
-version:1.1.1
+version: 1.2.0
 depends on:
 	package: pulpcity-supreme.mse-game
 depends on:

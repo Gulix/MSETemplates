@@ -3,7 +3,7 @@ short name: Pulp City symbols
 icon: pulp_city.jpg
 position hint: 1
 installer group: pulpcity/symbols
-version:1.1.0
+version: 1.2.0
 image font size: 20
 horizontal space: 2
 symbol:

@@ -4,7 +4,7 @@ short name: Minions
 icon: pulp_city.jpg
 position hint: 3
 installer group: pulpcity/Minions cards
-version:1.2.0
+version: 1.2.0
 depends on:
 	package: pulpcity-supreme.mse-game
 depends on:
