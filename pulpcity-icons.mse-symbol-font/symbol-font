@@ -38,6 +38,34 @@ symbol:
 	code: /VILLAIN
 	image: villain.png
 	image font size: 20
+symbol:
+	code: /SMASH
+	image: smash.png
+	image font size: 20
+symbol:
+	code: /AIR
+	image: air.png
+	image font size: 20
+symbol:
+	code: /WATER
+	image: water.png
+	image font size: 20
+symbol:
+	code: /EARTH
+	image: earth.png
+	image font size: 20
+symbol:
+	code: /FIRE
+	image: fire.png
+	image font size: 20
+symbol:
+	code: /LIGHT
+	image: light.png
+	image font size: 20
+symbol:
+	code: /DARKNESS
+	image: darkness.png
+	image font size: 20
 insert symbol menu:
 	item: /ST
 	item: /DF
@@ -45,5 +73,18 @@ insert symbol menu:
 	item: /EN
 	item: /MN
 	item: /SP
+	item:
+		type: line
 	item: /HERO
 	item: /VILLAIN
+	item:
+		type: line
+	item: /SMASH
+	item:
+		name: elements
+		item: /AIR
+		item: /WATER
+		item: /EARTH
+		item: /FIRE
+		item: /LIGHT
+		item: /DARKNESS
