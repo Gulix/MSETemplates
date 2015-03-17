@@ -84,6 +84,13 @@ styling field:
 	initial: yes
 	choice: yes
 	choice: no
+styling field:
+	type: choice
+	name: minions_displayed
+	description: Display the Minions+ field
+	initial: no
+	choice: yes
+	choice: no
 card style:
 	supreme_name:
 		left: 285
@@ -201,7 +208,7 @@ card style:
 		top: 206
 		width: 43
 		height: 43
-		z index: 3
+		z index: 4
 		render style: image
 		popup style: in place
 		choice images:
@@ -223,7 +230,7 @@ card style:
 		top: 254
 		width: 43
 		height: 43
-		z index: 3
+		z index: 4
 		render style: image
 		popup style: in place
 		choice images:
@@ -245,7 +252,7 @@ card style:
 		top: 305
 		width: 43
 		height: 43
-		z index: 3
+		z index: 4
 		render style: image
 		popup style: in place
 		choice images:
@@ -267,7 +274,7 @@ card style:
 		top: 355
 		width: 43
 		height: 43
-		z index: 3
+		z index: 4
 		render style: image
 		popup style: in place
 		choice images:
@@ -289,7 +296,7 @@ card style:
 		top: 405
 		width: 43
 		height: 43
-		z index: 3
+		z index: 4
 		render style: image
 		popup style: in place
 		choice images:
@@ -311,7 +318,7 @@ card style:
 		top: 455
 		width: 43
 		height: 43
-		z index: 3
+		z index: 4
 		render style: image
 		popup style: in place
 		choice images:
@@ -405,7 +412,7 @@ card style:
 		width: 611
 		height: 439
 		alignment: top left force justify if-overflow
-		z index: 2
+		z index: 3
 		font:
 			name: Komika Text Kaps
 			size: { styling.actions_font_size }
@@ -418,9 +425,9 @@ card style:
 		left: 35
 		top: 471
 		width: 611
-		height: 439
+		height: { if (styling.minions_displayed == "yes") then 430 else 439 }
 		alignment: bottom left force justify if-overflow
-		z index: 1
+		z index: 2
 		font:
 			name: Komika Text Kaps
 			size: { styling.powers_font_size }
@@ -444,6 +451,44 @@ card style:
 			fire: elements_fire.png
 			light: elements_light.png
 			darkness: elements_darkness.png
+	minions_start_number:
+		left: 69
+		top: 899
+		width: 89
+		height: 73
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			0: { if (styling.minions_displayed == "yes") then "minions_0.png" else "minions_hidden.png" }
+			1: { if (styling.minions_displayed == "yes") then "minions_1.png" else "minions_hidden.png" }
+			2: { if (styling.minions_displayed == "yes") then "minions_2.png" else "minions_hidden.png" }
+			3: { if (styling.minions_displayed == "yes") then "minions_3.png" else "minions_hidden.png" }
+			4: { if (styling.minions_displayed == "yes") then "minions_4.png" else "minions_hidden.png" }
+			5: { if (styling.minions_displayed == "yes") then "minions_5.png" else "minions_hidden.png" }
+	is_exclusive:
+		left: 140
+		top: 912
+		width: 241
+		height: 52
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			yes: { if (styling.minions_displayed == "yes") then "minions_exclusive.png" else "minions_exclusive_hidden_without_minions.png" }
+			no: { if (styling.minions_displayed == "yes") then "minions_exclusive_hidden_with_minions.png" else "minions_exclusive_hidden_without_minions.png" }
+	info_exclusive:
+		left: 152
+		top: 914
+		width: 204
+		height: 32
+		alignment: middle left
+		angle: -2
+		font:
+			name: Impact
+			size: 16
+			color: rgb(240, 240, 240)
+		z index: 2
 extra card field:
 	type: choice
 	name: bg_card
