@@ -223,7 +223,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.strength_value) == 1) then 28 else 20 }
 			color: { if (card.strength_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
 	defense_trait:
 		left: 610
@@ -245,7 +245,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.defense_value) == 1) then 28 else 20 }
 			color: { if (card.defense_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
 	energy_trait:
 		left: 610
@@ -267,7 +267,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.energy_value) == 1) then 28 else 20 }
 			color: { if (card.energy_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
 	agility_trait:
 		left: 613
@@ -289,7 +289,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.agility_value) == 1) then 28 else 20 }
 			color: { if (card.agility_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
 	mind_trait:
 		left: 613
@@ -311,7 +311,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.mind_value) == 1) then 28 else 20 }
 			color: { if (card.mind_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
 	spirit_trait:
 		left: 615
@@ -333,7 +333,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.spirit_value) == 1) then 28 else 20 }
 			color: { if (card.spirit_trait != "trump") then rgb(255, 255, 255) else rgb(186, 29, 35) }
 	hero_affiliation:
 		left: 504
