@@ -83,6 +83,14 @@ styling field:
 	initial: yes
 	choice: yes
 	choice: no
+styling field:
+	type: choice
+	name: hp_by_models
+	description: HP displayed by card or by models ?
+	initial: card
+	choice: card
+	choice: starting_models
+	choice: total_models
 card style:
 	supreme_name:
 		left: 285
@@ -146,13 +154,13 @@ card style:
 		mask: hpMask.png
 		choice images:
 			0: hp00.png
-			1: { "hp01" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
-			2: { "hp02" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
-			3: { "hp03" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
-			4: { "hp04" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
-			5: { "hp05" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
-			6: { "hp06" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
-			7: { "hp07" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
+			1: { "hp01" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number > 1) and (card.minions_start_number < 6))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) > 1) and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) < 6)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
+			2: { "hp02" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number > 1) and (card.minions_start_number < 6))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) > 1) and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) < 6)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
+			3: { "hp03" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number > 1) and (card.minions_start_number < 5))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) > 1) and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) < 5)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
+			4: { "hp04" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number == 2))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) == 2)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
+			5: { "hp05" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number == 2))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) == 2)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
+			6: { "hp06" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number == 2))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) == 2)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
+			7: { "hp07" + (if (styling.hp_with_numbers == "yes") then "_num") + (if ((styling.hp_by_models == "starting_models") and (card.minions_start_number == 2))  then ("_models" + card.minions_start_number) else if ((styling.hp_by_models == "total_models") and ((to_int(card.minions_start_number) + to_int(card.minions_additional_number)) == 2)) then ("_models" + (to_int(card.minions_start_number) + to_int(card.minions_additional_number)) ) ) + ".png" }
 			8: { "hp08" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
 			9: { "hp09" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
 			10: { "hp10" + (if (styling.hp_with_numbers == "yes") then "_num") + ".png" }
