@@ -388,10 +388,10 @@ card style:
 			size: 22
 			color: rgb(0, 0, 0)
 	is_unique:
-		left: 612
+		left: 591
 		top: 0
-		width: 88
-		height: 76
+		width: 109
+		height: 90
 		z index: 3
 		render style: image
 		popup style: in place
