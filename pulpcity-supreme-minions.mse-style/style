@@ -171,7 +171,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.strength_value) == 1) then 28 else 20 }
 			color: rgb(255, 255, 255)
 	defense_value:
 		left: 653
@@ -182,7 +182,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.defense_value) == 1) then 28 else 20 }
 			color: rgb(255, 255, 255)
 	energy_value:
 		left: 653
@@ -193,7 +193,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.energy_value) == 1) then 28 else 20 }
 			color: rgb(255, 255, 255)
 	agility_value:
 		left: 656
@@ -204,7 +204,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.agility_value) == 1) then 28 else 20 }
 			color: rgb(255, 255, 255)
 	mind_value:
 		left: 656
@@ -215,7 +215,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.mind_value) == 1) then 28 else 20 }
 			color: rgb(255, 255, 255)
 	spirit_value:
 		left: 658
@@ -226,7 +226,7 @@ card style:
 		z index: 1
 		font:
 			name: Impact
-			size: 28
+			size: { if (length(card.spirit_value) == 1) then 28 else 20 }
 			color: rgb(255, 255, 255)
 	hero_affiliation:
 		left: 513

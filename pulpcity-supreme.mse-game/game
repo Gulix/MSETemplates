@@ -75,7 +75,6 @@ card field:
 	type: text
 	name: strength_value
 	description: Strength
-	script: only_numbers(value)
 card field:
 	type: choice
 	name: defense_trait
@@ -87,7 +86,6 @@ card field:
 	type: text
 	name: defense_value
 	description: Defense
-	script: only_numbers(value)
 card field:
 	type: choice
 	name: energy_trait
@@ -99,7 +97,6 @@ card field:
 	type: text
 	name: energy_value
 	description: Energy
-	script: only_numbers(value)
 card field:
 	type: choice
 	name: agility_trait
@@ -111,7 +108,6 @@ card field:
 	type: text
 	name: agility_value
 	description: Agility
-	script: only_numbers(value)
 card field:
 	type: choice
 	name: mind_trait
@@ -123,7 +119,6 @@ card field:
 	type: text
 	name: mind_value
 	description: Mind
-	script: only_numbers(value)
 card field:
 	type: choice
 	name: spirit_trait
@@ -135,7 +130,6 @@ card field:
 	type: text
 	name: spirit_value
 	description: Spirit
-	script: only_numbers(value)
 card field:
 	type: choice
 	name: hero_affiliation
