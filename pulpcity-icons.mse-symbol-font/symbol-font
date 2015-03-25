@@ -66,6 +66,18 @@ symbol:
 	code: /DARKNESS
 	image: darkness.png
 	image font size: 20
+symbol:
+	code: /SCIENCE
+	image: origin_science.png
+	image font size: 20
+symbol:
+	code: /NATURE
+	image: origin_nature.png
+	image font size: 20
+symbol:
+	code: /MYSTERY
+	image: origin_mystery.png
+	image font size: 20
 insert symbol menu:
 	item: /ST
 	item: /DF
@@ -88,3 +100,8 @@ insert symbol menu:
 		item: /FIRE
 		item: /LIGHT
 		item: /DARKNESS
+	item:
+		name: origins
+		item: /MYSTERY
+		item: /NATURE
+		item: /SCIENCE
