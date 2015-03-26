@@ -243,3 +243,10 @@ card field:
 	initial: no
 	choice: yes
 	choice: no
+card field:
+	type: choice
+	name: is_powerhouse
+	description: Is Powerhouse ?
+	initial: normal_supreme
+	choice: normal_supreme
+	choice: powerhouse

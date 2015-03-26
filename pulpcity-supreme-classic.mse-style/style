@@ -125,7 +125,7 @@ card style:
 			name: Impact
 			size: 28
 			color: rgb(255, 224, 81)
-		z index: 1
+		z index: 2
 	supreme_tags:
 		left: 277
 		top: 158
@@ -489,6 +489,17 @@ card style:
 			size: 16
 			color: rgb(240, 240, 240)
 		z index: 2
+	is_powerhouse:
+		left: 0
+		top: 222
+		width: 47
+		height: 52
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			powerhouse: powerup_dice_powerhouse.png
+			normal_supreme: not_powerhouse.png
 extra card field:
 	type: choice
 	name: bg_card
