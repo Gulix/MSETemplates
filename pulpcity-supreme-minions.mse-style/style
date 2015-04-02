@@ -91,6 +91,17 @@ styling field:
 	choice: card
 	choice: starting_models
 	choice: total_models
+styling field:
+	type: choice
+	name: exclusive_supreme_font_size
+	description: Font size for the Exclusive section
+	initial: 22
+	choice: 24
+	choice: 22
+	choice: 20
+	choice: 18
+	choice: 16
+	choice: 14
 card style:
 	supreme_name:
 		left: 285
@@ -385,7 +396,7 @@ card style:
 			no: exclusive_not.png
 	info_exclusive:
 		left: 335
-		top: 931
+		top: { 931 + 22 - styling.exclusive_supreme_font_size }
 		width: 154
 		height: 38
 		alignment: center
@@ -393,7 +404,7 @@ card style:
 		z index: 4
 		font:
 			name: Impact
-			size: 22
+			size: {styling.exclusive_supreme_font_size}
 			color: rgb(0, 0, 0)
 	is_unique:
 		left: 591
