@@ -56,3 +56,10 @@ card field:
 	description: Card image
 	editable: true
 	save value: true
+card field:
+	type: choice
+	name: agp_count
+	description: # of AGP
+	initial: 1
+	choice: 1
+	choice: 3
