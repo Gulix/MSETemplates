@@ -26,6 +26,19 @@ styling field:
 	choice: 24
 	choice: 26
 	choice: 30
+styling field:
+	type: choice
+	name: description_font_size
+	description: Font size for the description
+	initial: 16
+	choice: 16
+	choice: 24
+	choice: 32
+styling field:
+	type: color
+	name: color_title
+	description: Color for the Title
+	initial: rgb(255, 255, 255)
 card style:
 	name:
 		left: 0
@@ -36,7 +49,7 @@ card style:
 		font:
 			name: Impact
 			size: 40
-			color: rgb(255, 255, 255)
+			color: {styling.color_title}
 			shadow color: rgb(0, 0, 0)
 			shadow displacement x: -2
 			shadow displacement y: 2
@@ -68,7 +81,7 @@ card style:
 			italic name: Komika Display Tight
 		symbol font:
 			name: pulpcity-icons
-			size: {styling.content_font_size + 4}
+			size: {to_int(styling.content_font_size) + 4}
 		mask: card_plot_text_mask.png
 	description:
 		left: 2
@@ -80,7 +93,7 @@ card style:
 		z index: 1
 		font:
 			name: Komika Text Kaps
-			size: 16
+			size: {styling.description_font_size}
 			color: rgb(200, 200, 200)
 	img_description:
 		left: 0
