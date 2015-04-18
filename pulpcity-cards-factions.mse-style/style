@@ -4,7 +4,7 @@ short name: Faction Cards
 icon: pulp_city.jpg
 position hint: 5
 installer group: pulpcity/Faction Cards
-version: 1.1.1
+version: 1.2.3
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:
