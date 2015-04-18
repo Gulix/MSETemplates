@@ -1,0 +1,117 @@
+mse version: 2.0.0
+game: pulpcity-cards
+short name: Faction Cards
+icon: pulp_city.jpg
+position hint: 5
+installer group: pulpcity/Faction Cards
+version: 1.1.1
+depends on:
+	package: pulpcity-cards.mse-game
+depends on:
+	package: pulpcity-icons.mse-symbol-font
+	
+card width: 790
+card height: 974
+card dpi: 214
+
+card style:
+	name:
+		left: 0
+		top: 92
+		width: 790
+		height: 99
+		alignment: top center
+		angle: 2
+		font:
+			name: Impact
+			size: 44
+			color: rgb(255, 255, 255)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: -2
+			shadow displacement y: 2
+			shadow blur: 8
+		z index: 1
+	subname:
+		left: 0
+		top: 526
+		width: 790
+		height: 52
+		alignment: top center
+		font:
+			name: Impact
+			size: 30
+			color: rgb(255, 255, 255)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: -2
+			shadow displacement y: 2
+			shadow blur: 8
+		z index: 2
+	title_1:
+		left: 0
+		top: 20
+		width: 790
+		height: 62
+		alignment: middle left
+		angle: 2
+		font:
+			name: Impact
+			size: 50
+			color: rgb(66, 66, 66)
+		z index: 1
+	informations_1:
+		left: 0
+		top: 587
+		width: 790
+		height: 300
+		alignment: middle center
+		font:
+			name: Komika Text Kaps
+			size: 24
+			color: rgb(255, 255, 255)
+			italic name: Komika Display Tight
+		z index: 1
+	informations_2:
+		left: 0
+		top: 850
+		width: 790
+		height: 144
+		alignment: top center
+		font:
+			name: Komika Text Kaps
+			size: 20
+			color: rgb(66, 66, 66)
+		z index: 1
+	description:
+		left: 0
+		top: 336
+		width: 400
+		height: 203
+		alignment: middle left
+		font:
+			name: Komika Text Kaps
+			size: 18
+			color: rgb(127, 127, 127)
+		z index: 2
+	img_description:
+		left: 0
+		top: 133
+		width: 790
+		height: 416
+		z index: -1
+extra card field:
+	type: choice
+	name: bg_card
+	initial: normal
+	choice: normal
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 790
+		height: 974
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			normal: card_faction.png
