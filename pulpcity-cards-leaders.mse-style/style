@@ -1,0 +1,114 @@
+mse version: 2.0.0
+game: pulpcity-cards
+short name: Leader Cards
+icon: pulp_city.jpg
+position hint: 4
+installer group: pulpcity/Leader Cards
+version: 1.1.1
+depends on:
+	package: pulpcity-cards.mse-game
+depends on:
+	package: pulpcity-icons.mse-symbol-font
+	
+card width: 790
+card height: 974
+card dpi: 214
+
+styling field:
+	type: choice
+	name: card_language
+	description: Card language
+	initial: blank
+	choice: blank
+	choice: english
+	choice: francais
+card style:
+	name:
+		left: 0
+		top: 62
+		width: 790
+		height: 99
+		alignment: top center
+		angle: -2
+		font:
+			name: Impact
+			size: 44
+			color: rgb(255, 255, 255)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: -2
+			shadow displacement y: 2
+			shadow blur: 8
+		z index: 1
+	subname:
+		left: 0
+		top: 526
+		width: 790
+		height: 52
+		alignment: top center
+		font:
+			name: Impact
+			size: 30
+			color: rgb(255, 255, 255)
+			shadow color: rgb(0, 0, 0)
+			shadow displacement x: -2
+			shadow displacement y: 2
+			shadow blur: 8
+		z index: 2
+	title_1:
+		left: 0
+		top: -13
+		width: 790
+		height: 62
+		alignment: middle right
+		angle: -2
+		font:
+			name: Impact
+			size: 50
+			color: rgb(66, 66, 66)
+		z index: 1
+	description:
+		left: 0
+		top: 587
+		width: 790
+		height: 95
+		alignment: middle center
+		font:
+			name: Komika Text Kaps
+			size: 22
+			color: rgb(66, 66, 66)
+		z index: 1
+	informations_1:
+		left: 0
+		top: 691
+		width: 790
+		height: 283
+		alignment: middle center
+		font:
+			name: Komika Text Kaps
+			size: 24
+			color: rgb(255, 255, 255)
+			italic name: Komika Display Tight
+		z index: 1
+	img_description:
+		left: 0
+		top: 133
+		width: 790
+		height: 416
+		z index: -1
+extra card field:
+	type: choice
+	name: bg_card
+	initial: normal
+	choice: normal
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 790
+		height: 974
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			normal: card_leader.png
