@@ -1,0 +1,60 @@
+﻿short name: JSON
+full name: Json Export 2
+position hint: 006
+icon: icon.png
+version: 2015-06-19
+
+depends on:
+	package: pulpcity-supreme.mse-game
+
+game: pulpcity-supreme
+file type: *.json|*.json|*.*|*.*
+
+script:
+	replace_factions := {
+		" " + 
+		replace(match:"A.R.C.", replace:"\"arc\"", 
+			replace(match:"Blood Watch", replace:"\"bloodwatch\"", 
+			replace(match:"Coven", replace:"\"coven\"", 
+			replace(match:"Forgotten", replace:"\"forgotten\"", 
+			replace(match:"Grimm", replace:"\"grimm\"", 
+			replace(match:"Heavy Metal", replace:"\"heavymetal\"", 
+			replace(match:"Infinite Hourglass", replace:"\"infinitehourglass\"", 
+			replace(match:"Jade Cult", replace:"\"jadecult\"", 
+			replace(match:"Necroplane", replace:"\"necroplane\"", 
+			replace(match:"Otherside", replace:"\"otherside\"", 
+			replace(match:"Settler's Green", replace:"\"settlersgreen\"", 
+			replace(match:"Star Marshals", replace:"\"starmarshals\"", 
+			replace(match:"Supreme Alliance", replace:"\"supremealliance\"", 
+			replace(match:"The Way", replace:"\"theway\"", 
+			replace(match:"Ulthar", replace:"\"ulthar\"", card.supreme_factions)))))))))))))))
+	}
+	find_role := {
+		powers := to_upper(trim(remove_tags(card.supreme_powers)))
+		if (match(powers, match:"^LEADER")) then "leader"
+		else if (match(powers, match:"^POWERHOUSE")) then "powerhouse"
+		else if (match(powers, match:"^BLASTER")) then "blaster"
+		else if (match(powers, match:"^TIREUR")) then "blaster"
+		else if (match(powers, match:"^BRAWLER")) then "brawler"
+		else if (match(powers, match:"^BAGARREUR")) then "brawler"
+		else if (match(powers, match:"^SUPPORT")) then "support"
+		else if (match(powers, match:"^TANK")) then "tank"
+		else if (match(powers, match:"^SPEED")) then "speeder"
+		else if (match(powers, match:"^VÉLOCE")) then "speeder"
+		else if (match(powers, match:"^INFILTR")) then "infiltrator"				
+		else "undefined"
+	}
+	write_card := {
+		"\{\n\"id\": " + idx + ",\n"
+		+"\"name\": \"" + card.supreme_name + "\",\n"
+		+"\"level\": " + card.supreme_level + ",\n"
+		+"\"role_key\": \"" + find_role() + "\",\n"
+		+"\"ap_granted\": " + card.action_points_added + ",\n"
+		+"\"minions_granted\": " + card.minions_start_number + ",\n"
+		+"\"factions\": [ " + replace_factions() + " ],\n"
+		+"\"is_hero\": " + ( if card.hero_affiliation == "yes" then "1" else "0" ) + ",\n"
+		+"\"is_villain\": " + ( if card.villain_affiliation == "yes" then "1" else "0" ) + ",\n"
+		+"\"is_freelance\": " + ( if card.freelancer == "yes" then "1" else "0" ) + "\n"
+		+"}"
+	}
+	write_cards := "[\n" + to_text(for each idx:card in cards do write_card()) + "\n]"
