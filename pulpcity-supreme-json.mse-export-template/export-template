@@ -44,6 +44,22 @@ script:
 		else if (match(powers, match:"^INFILTR")) then "infiltrator"				
 		else "undefined"
 	}
+	get_elements := {
+		" " + 
+		replace(match:"air", replace:"\"air\"", 
+			replace(match:"fire", replace:"\"fire\"", 
+			replace(match:"earth", replace:"\"earth\"", 
+			replace(match:"water", replace:"\"water\"", 
+			replace(match:"light", replace:"\"light\"", 
+			replace(match:"darkness", replace:"\"darkness\"", card.elements))))))
+	}
+	replace_tags := {
+		" " + 
+		replace(match:"VIVANT", replace:"\"living\"", 
+			replace(match:"MéCANIQUE", replace:"\"mechanical\"", 
+			replace(match:"EXTéRIEUR", replace:"\"outsider\"", 
+			replace(match:"NON-VIVANT", replace:"\"non-living\"", to_upper(card.supreme_tags)))))
+	}
 	write_card := {
 		"\{\n\"id\": " + idx + ",\n"
 		+"\"name\": \"" + card.supreme_name + "\",\n"
@@ -54,7 +70,28 @@ script:
 		+"\"factions\": [ " + replace_factions() + " ],\n"
 		+"\"is_hero\": " + ( if card.hero_affiliation == "yes" then "1" else "0" ) + ",\n"
 		+"\"is_villain\": " + ( if card.villain_affiliation == "yes" then "1" else "0" ) + ",\n"
-		+"\"is_freelance\": " + ( if card.freelancer == "yes" then "1" else "0" ) + "\n"
-		+"}"
+		+"\"is_freelance\": " + ( if card.freelancer == "yes" then "1" else "0" ) + ",\n"
+		+"\"origin\": \"" + card.supreme_origin + "\",\n"
+		+"\"strength_value\": " + card.strength_value + ",\n"
+		+"\"defense_value\": " + card.defense_value + ",\n"
+		+"\"agility_value\": " + card.agility_value + ",\n"
+		+"\"energy_value\": " + card.energy_value + ",\n"
+		+"\"mind_value\": " + card.mind_value + ",\n"
+		+"\"spirit_value\": " + card.spirit_value + ",\n"
+		+"\"strength_trump\": " + (if card.strength_trait == "trump" then "1" else "0" ) + ",\n"
+		+"\"defense_trump\": " + (if card.defense_trait == "trump" then "1" else "0" ) + ",\n"
+		+"\"agility_trump\": " + (if card.agility_trait == "trump" then "1" else "0" ) + ",\n"
+		+"\"energy_trump\": " + (if card.energy_trait == "trump" then "1" else "0" ) + ",\n"
+		+"\"mind_trump\": " + (if card.mind_trait == "trump" then "1" else "0" ) + ",\n"
+		+"\"spirit_trump\": " + (if card.spirit_trait == "trump" then "1" else "0" ) + ",\n"
+		+"\"hp_value\": " + card.hit_points_image + ",\n"
+		+"\"mvt_type\": \"" + card.movement_type + "\",\n"
+		+"\"mvt_value\": " + card.movement_value + ",\n"
+		+"\"is_stealth\": " + (if to_upper(card.movement_special) == "FURTIF" then "1" else "0" ) + ",\n"
+		+"\"exclusive_minions\": \"" + card.info_exclusive + "\",\n"
+		+"\"elements\": [ " + get_elements() + " ],\n"
+		+"\"ap_limit\": " + card.action_points_limit + ",\n"
+		+"\"supreme_types\": [ " + replace_tags() + " ]\n"
+		+"},"
 	}
 	write_cards := "[\n" + to_text(for each idx:card in cards do write_card()) + "\n]"
