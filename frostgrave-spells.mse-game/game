@@ -1,0 +1,71 @@
+﻿mse version: 2.0.0
+short name: Frostgrave
+full name:  Frostgrave Spells
+icon: frostgrave.jpg
+position hint: 2
+installer group: frostgrave/default
+version: 1.3.0
+init script: include file: script
+
+card field:
+	type: text
+	name: card_name
+	description: Spell Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+	multi line: true
+card field:
+	type: text
+	name: school_magic_text
+	description: School of Magic
+	card list column: 2
+	card list visible: true
+card field:
+	type: text
+	name: spell_range
+	description: Spell range
+	card list column: 4
+	card list visible: true
+card field:
+	type: text
+	name: spell_description
+	description: Spell Description
+	multi line: true
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	save value: true
+card field:
+	type: choice
+	name: spell_difficulty
+	description: Spell Difficulty
+	initial: 10
+	choice: 10
+	choice: 11
+	choice: 12
+	choice: 13
+	choice: 14
+	choice: 15
+	choice: 16
+	choice: 17
+	choice: 18
+	choice: 19
+	choice: 20
+card field:
+	type: choice
+	name: school_magic_choice
+	description: School of Magic
+	initial: chronomancer
+	choice: chronomancer
+	choice: sigilist
+	choice: witch
+	choice: necromancer
+	choice: enchanter
+	choice: illusionist
+	choice: summoner
+	choice: thaumaturge
+	choice: elementalist
+	choice: soothsayer

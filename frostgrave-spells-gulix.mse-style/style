@@ -1,0 +1,88 @@
+mse version: 2.0.0
+version: 1.3.0
+game: frostgrave-spells
+short name: Gulix's Spell
+icon: icon.png
+position hint: 1
+installer group: frostgrave/default
+
+depends on:
+	package: frostgrave-spells.mse-game
+	
+card width: 700
+card height: 954
+card dpi: 300
+
+card style:
+	card_name:
+		left: 379
+		top: 851
+		width: 311
+		height: 87
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 28
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	spell_difficulty:
+		left: 342
+		top: 121
+		width: 59
+		height: 59
+		z index: 1
+		render style: text
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 36
+			color: rgb(0, 0, 0)
+			weight: bold
+	spell_description:
+		left: 28
+		top: 190
+		width: 641
+		height: 733
+		alignment: top left
+		font:
+			name: Times New Roman
+			size: 20
+			color: rgb(0, 0, 0)
+		mask: textMask.png
+		z index: 1
+	img_description:
+		left: 0
+		top: 0
+		width: 330
+		height: 373
+		z index: -1
+extra card field:
+	type: choice
+	name: bg_card
+	initial: lightBlue
+	choice: lightBlue
+	choice: darkBlue
+	choice: red
+	choice: yellow
+	choice: brown
+	choice: green
+	choice: purple
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 700
+		height: 954
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			lightBlue: light_blue.png
+			darkBlue: dark_blue.png
+			red: red.png
+			yellow: yellow.png
+			brown: brown.png
+			green: green.png
+			purple: purple.png
