@@ -4,7 +4,7 @@ short name: AGP Cards
 icon: pulp_city.jpg
 position hint: 1
 installer group: pulpcity/AGP Cards
-version: 1.2.3
+version: 1.2.4
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:

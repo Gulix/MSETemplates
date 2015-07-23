@@ -4,7 +4,7 @@ short name: Leader Cards
 icon: pulp_city.jpg
 position hint: 4
 installer group: pulpcity/Leader Cards
-version: 1.2.3
+version: 1.2.4
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:
