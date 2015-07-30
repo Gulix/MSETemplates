@@ -1,1 +1,29 @@
 ﻿only_numbers := filter_text@(match: "^[0123456789]+")
+
+school_magic_french := {
+	if      (card.school_magic_choice == "chronomancer") then "Chronomancie" 
+	else if (card.school_magic_choice == "sigilist") then "Sigilisme" 
+	else if (card.school_magic_choice == "witch") then "Sorcellerie" 
+	else if (card.school_magic_choice == "necromancer") then "Nécromancie" 
+	else if (card.school_magic_choice == "enchanter") then "Enchantement" 
+	else if (card.school_magic_choice == "illusionist") then "Illusion" 
+	else if (card.school_magic_choice == "summoner") then "Invocation" 
+	else if (card.school_magic_choice == "thaumaturge") then "Thaumaturgie" 
+	else if (card.school_magic_choice == "elementalist") then "Elémentalisme" 
+	else if (card.school_magic_choice == "soothsayer") then "Divination" 
+	else "Autre"
+}
+
+school_magic_english := {
+	if      (card.school_magic_choice == "chronomancer") then "Chronomancer" 
+	else if (card.school_magic_choice == "sigilist") then "Sigilist" 
+	else if (card.school_magic_choice == "witch") then "Witch" 
+	else if (card.school_magic_choice == "necromancer") then "Necromancer" 
+	else if (card.school_magic_choice == "enchanter") then "Enchanter" 
+	else if (card.school_magic_choice == "illusionist") then "Illusionist" 
+	else if (card.school_magic_choice == "summoner") then "Summoner" 
+	else if (card.school_magic_choice == "thaumaturge") then "Thaumaturge" 
+	else if (card.school_magic_choice == "elementalist") then "Elementalist" 
+	else if (card.school_magic_choice == "soothsayer") then "Soothsayer" 
+	else "Other"
+}

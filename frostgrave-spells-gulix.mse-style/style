@@ -1,7 +1,7 @@
 mse version: 2.0.0
 version: 1.3.0
 game: frostgrave-spells
-short name: Gulix's Spell
+short name: Gulix Theme
 icon: icon.png
 position hint: 1
 installer group: frostgrave/default
@@ -13,44 +13,92 @@ card width: 700
 card height: 954
 card dpi: 300
 
+styling field:
+	type: choice
+	name: card_language
+	description: Card language
+	initial: english
+	choice: english
+	choice: francais
+styling field:
+	type: choice
+	name: name_font_size
+	description: Font size for the Name
+	initial: 40
+	choice: 46
+	choice: 44
+	choice: 40
+	choice: 36
+	choice: 32
+styling field:
+	type: choice
+	name: description_font_size
+	description: Font size for the description section
+	initial: 24
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+	choice: 26
+	choice: 28
+	choice: 30
 card style:
 	card_name:
-		left: 379
-		top: 851
-		width: 311
-		height: 87
+		left: 337
+		top: 36
+		width: 324
+		height: 147
 		alignment: middle center
 		font:
 			name: Modern Antiqua
-			size: 28
+			size: { styling.name_font_size }
 			color: rgb(0, 0, 0)
 			weight: bold
 		z index: 1
 	spell_difficulty:
-		left: 342
-		top: 121
-		width: 59
-		height: 59
+		left: 123
+		top: 845
+		width: 55
+		height: 55
 		z index: 1
-		render style: text
 		alignment: middle center
 		font:
 			name: Modern Antiqua
-			size: 36
+			size: 32
 			color: rgb(0, 0, 0)
-			weight: bold
+			weight: bold	
 	spell_description:
-		left: 28
-		top: 190
-		width: 641
-		height: 733
+		left: 36
+		top: 178
+		width: 624
+		height: 638
 		alignment: top left
 		font:
 			name: Times New Roman
-			size: 20
+			size: { styling.description_font_size }
 			color: rgb(0, 0, 0)
 		mask: textMask.png
 		z index: 1
+	school_magic_choice:
+		left: 621
+		top: 752
+		width: 69
+		height: 91
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			chronomancer: school_icon_chronomancer.png
+			sigilist: school_icon_sigilist.png
+			witch: school_icon_witch.png
+			necromancer: school_icon_necromancer.png
+			enchanter: school_icon_enchanter.png
+			illusionist: school_icon_illusionist.png
+			summoner: school_icon_summoner.png
+			thaumaturge: school_icon_thaumaturge.png
+			elementalist: school_icon_elementalist.png
+			soothsayer: school_icon_soothsayer.png
 	img_description:
 		left: 0
 		top: 0
@@ -60,14 +108,13 @@ card style:
 extra card field:
 	type: choice
 	name: bg_card
-	initial: lightBlue
-	choice: lightBlue
-	choice: darkBlue
-	choice: red
+	initial: yellow
 	choice: yellow
-	choice: brown
-	choice: green
-	choice: purple
+extra card field:
+	type: text
+	name: text_school
+	description: Text Description of the School
+	script: if (styling.card_language == "francais") then school_magic_french() else school_magic_english()
 extra card style:
 	bg_card:
 		left: 0
@@ -79,10 +126,15 @@ extra card style:
 		popup style: in place
 		mask: card_mask.png
 		choice images:
-			lightBlue: light_blue.png
-			darkBlue: dark_blue.png
-			red: red.png
 			yellow: yellow.png
-			brown: brown.png
-			green: green.png
-			purple: purple.png
+	text_school:
+		left: 346
+		top: 859
+		width: 347
+		height: 62
+		z index: 1
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 32
+			color: rgb(0, 0, 0)
