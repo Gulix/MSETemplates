@@ -27,6 +27,16 @@ card field:
 	description: Spell Description
 	multi line: true
 card field:
+	type: text
+	name: spell_range
+	description: Spell range
+	multi line: false
+card field:
+	type: text
+	name: credits
+	description: Credits
+	multi line: false
+card field:
 	type: image
 	name: img_description
 	description: Card image

@@ -11,4 +11,7 @@ mse.exe --create-installer sobah.%version%.mse-installer %listePckSBH%
 set listePckPulp=pulpcity-icons.mse-symbol-font pulpcity-supreme.mse-game pulpcity-supreme-classic.mse-style pulpcity-supreme-minions.mse-style pulpcity-cards.mse-game pulpcity-cards-agendas.mse-style pulpcity-cards-agp_cards.mse-style pulpcity-cards-factions.mse-style pulpcity-cards-leaders.mse-style pulpcity-cards-plots.mse-style
 mse.exe --create-installer pulpcity.%version%.mse-installer %listePckPulp%
 
-mse.exe --create-installer gulixtemplates.%version%.mse-installer %listePckSBH% %listePckBB% %listePckWQ% %listePckPulp%
+set listePckFrostgrave=frostgrave-spells.mse-game frostgrave-spells-gulix.mse-style frostgrave-spells-classic.mse-style
+mse.exe --create-installer frostgrave.%version%.mse-installer %listePckFrostgrave%
+
+mse.exe --create-installer gulixtemplates.%version%.mse-installer %listePckSBH% %listePckBB% %listePckWQ% %listePckPulp% %listePckFrostgrave%

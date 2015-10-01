@@ -1,0 +1,133 @@
+mse version: 2.0.0
+version: 1.3.0
+game: frostgrave-spells
+short name: Classic Theme
+icon: icon.jpg
+position hint: 2
+installer group: frostgrave/default
+
+depends on:
+	package: frostgrave-spells.mse-game
+	
+card width: 954
+card height: 700
+card dpi: 300
+
+styling field:
+	type: choice
+	name: name_font_size
+	description: Font size for the Name
+	initial: 40
+	choice: 46
+	choice: 44
+	choice: 40
+	choice: 36
+	choice: 32
+styling field:
+	type: choice
+	name: description_font_size
+	description: Font size for the description section
+	initial: 24
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+	choice: 26
+	choice: 28
+	choice: 30
+card style:
+	card_name:
+		left: 181
+		top: 30
+		width: 596
+		height: 120
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: { styling.name_font_size }
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	spell_difficulty:
+		left: 805
+		top: 47
+		width: 100
+		height: 93
+		z index: 1
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 40
+			color: rgb(0, 0, 0)
+			weight: bold	
+	spell_range:
+		left: 181
+		top: 155
+		width: 596
+		height: 30
+		alignment: top center
+		font:
+			name: Times New Roman
+			size: 21
+			color: rgb(0, 0, 0)
+			style: italic
+		z index: 1
+	credits:
+		left: 708
+		top: 660
+		width: 232
+		height: 23
+		alignment: middle right
+		font:
+			name: Times New Roman
+			size: 16
+			color: rgb(0, 0, 0)
+			style: italic
+		z index: 1
+	spell_description:
+		left: 23
+		top: 190
+		width: 909
+		height: 470
+		alignment: top center
+		font:
+			name: Times New Roman
+			size: { styling.description_font_size }
+			color: rgb(0, 0, 0)
+		z index: 1
+	school_magic_choice:
+		left: 60
+		top: 55
+		width: 78
+		height: 78
+		z index: 1
+		render style: image
+		popup style: in place
+		choice images:
+			chronomancer: school_icon_chronomancer.png
+			sigilist: school_icon_sigilist.png
+			witch: school_icon_witch.png
+			necromancer: school_icon_necromancer.png
+			enchanter: school_icon_enchanter.png
+			illusionist: school_icon_illusionist.png
+			summoner: school_icon_summoner.png
+			thaumaturge: school_icon_thaumaturge.png
+			elementalist: school_icon_elementalist.png
+			soothsayer: school_icon_soothsayer.png
+extra card field:
+	type: choice
+	name: bg_card
+	initial: neutral
+	choice: neutral
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 954
+		height: 700
+		z index: 0
+		render style: image
+		popup style: in place
+		choice images:
+			neutral: neutral.png
