@@ -1,0 +1,64 @@
+﻿mse version: 2.0.0
+short name: 1page
+version: 1.2.0
+full name: One Page Rules
+icon: icon.png
+position hint: 3
+installer group: onepage/default
+
+init script: include file: script
+
+card field:
+	type: text
+	name: card_name
+	description: Card Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+	multi line: true
+card field:
+	type: text
+	name: card_surname
+	description: Card Surname
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: special_rules
+	description: Special rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: choice
+	name: quality_value
+	description: Quality
+	card list column: 2
+	card list visible: true
+	identifying: true
+	initial: 4+
+	choice: 1+
+	choice: 2+
+	choice: 3+
+	choice: 4+
+	choice: 5+
+	choice: 6+
+card field:
+	type: text
+	name: points_value
+	description: Cost of the card
+	card list column: 4
+	card list visible: true
+	identifying: true
+	script: only_numbers(value)
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true

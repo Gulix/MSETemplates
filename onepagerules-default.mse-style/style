@@ -1,0 +1,83 @@
+mse version: 2.0.0
+game: onepagerules
+version: 1.2.0
+short name: Basic
+full name: Basic Hex Style
+icon: icon.png
+position hint: 1
+installer group: onepage/default
+
+depends on:
+	package: onepagerules.mse-game
+	
+card width: 1201
+card height: 880
+card dpi: 300
+
+card style:
+	card_name:
+		left: 34
+		top: 3
+		width: 278
+		height: 74
+		alignment: middle center
+		font:
+			name: Manteka
+			size: 20
+			color: rgb(0, 0, 0)
+		z index: 1
+	special_rules:
+		left: 393
+		top: 20
+		width: 794
+		height: 841
+		font:
+			name: Calibri
+			size: 26
+			color: rgb(0, 0, 0)
+		z index: 1
+	quality_value:
+		left: 1003
+		top: 10
+		width: 193
+		height: 201
+		alignment: middle left
+		font:
+			name: DCC-SharpDistressBlack
+			size: 56
+			color: rgb(0, 0, 0)
+		z index: 1
+	points_value:
+		left: 3
+		top: 686
+		width: 203
+		height: 172
+		alignment: middle center
+		font:
+			name: DCC-SharpDistressBlack
+			size: 40
+			color: rgb(0, 0, 0)
+		z index: 1
+	img_description:
+		left: 20
+		top: 41
+		width: 317
+		height: 825
+		z index: -1
+extra card field:
+	type: choice
+	name: bg_card
+	initial: basic
+	choice: basic
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 1201
+		height: 880
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			basic: basic_card.png
