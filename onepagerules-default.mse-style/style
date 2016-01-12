@@ -1,68 +1,80 @@
 mse version: 2.0.0
 game: onepagerules
-version: 1.2.0
+version: 1.4.0
 short name: Basic
-full name: Basic Hex Style
-icon: icon.png
+full name: Basic 40k Style
+icon: icon.jpg
 position hint: 1
 installer group: onepage/default
 
 depends on:
 	package: onepagerules.mse-game
 	
-card width: 1201
-card height: 880
+card width: 480
+card height: 742
 card dpi: 300
 
 card style:
 	card_name:
-		left: 34
-		top: 3
-		width: 278
-		height: 74
+		left: 67
+		top: 35
+		width: 351
+		height: 35
 		alignment: middle center
 		font:
 			name: Manteka
 			size: 20
 			color: rgb(0, 0, 0)
 		z index: 1
-	special_rules:
-		left: 393
-		top: 20
-		width: 794
-		height: 841
+	card_surname:
+		left: 67
+		top: 72
+		width: 351
+		height: 40
+		alignment: middle center
 		font:
 			name: Calibri
-			size: 26
+			size: 18
+			weight: bold
+			color: rgb(0, 0, 0)
+		z index: 1
+	special_rules:
+		left: 27
+		top: 400
+		width: 426
+		height: 288
+		font:
+			name: Calibri
+			size: 16
 			color: rgb(0, 0, 0)
 		z index: 1
 	quality_value:
-		left: 1003
-		top: 10
-		width: 193
-		height: 201
+		left: 129
+		top: 332
+		width: 56
+		height: 47
 		alignment: middle left
 		font:
-			name: DCC-SharpDistressBlack
-			size: 56
+			name: Manteka
+			size: 36
 			color: rgb(0, 0, 0)
 		z index: 1
 	points_value:
-		left: 3
-		top: 686
-		width: 203
-		height: 172
+		left: 289
+		top: 340
+		width: 63
+		height: 36
 		alignment: middle center
 		font:
-			name: DCC-SharpDistressBlack
-			size: 40
+			name: Manteka
+			size: 24
 			color: rgb(0, 0, 0)
 		z index: 1
 	img_description:
-		left: 20
-		top: 41
-		width: 317
-		height: 825
+		left: 47
+		top: 116
+		width: 385
+		height: 230
 		z index: -1
 extra card field:
 	type: choice
@@ -73,8 +85,8 @@ extra card style:
 	bg_card:
 		left: 0
 		top: 0
-		width: 1201
-		height: 880
+		width: 480
+		height: 742
 		z index: 0
 		render style: image
 		popup style: in place

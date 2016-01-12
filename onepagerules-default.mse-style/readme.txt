@@ -1,8 +1,7 @@
 Style pour les cartes d'unités pour One Page Kill Team
 
 Polices nécessaires :
- - DCC-SharpDistressBlack : http://www.dafont.com/fr/dcc-sharp-distress-black.font
- - Calibri : http://www.fontpalace.com/font-details/Calibri/
+ - Manteka : https://www.behance.net/gallery/Manteka/2846011
  
 Icônes tirées du site http://game-icons.net/ (sous licence CC-By 3.0)
 
@@ -10,12 +9,11 @@ Icônes tirées du site http://game-icons.net/ (sous licence CC-By 3.0)
 
 ------------------------------------
 
-Style for the "Song of Blades & Heroes" unit cards.
+Style for the One Page Kill Team units cards
 
 Fonts required :
- - DCC-SharpDistressBlack : http://www.dafont.com/fr/dcc-sharp-distress-black.font
- - Calibri : http://www.fontpalace.com/font-details/Calibri/
+ - Manteka : https://www.behance.net/gallery/Manteka/2846011
  
 Icons from http://game-icons.net/ (under license CC-By 3.0)
 
-"Song of Blades & Heroes" is a game by Ganesha Games : http://www.ganeshagames.net/
+"One Page Kill Team" is a game by One Page Rules : https://onepagerules.wordpress.com/

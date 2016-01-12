@@ -1,9 +1,9 @@
-Cartes d'unités pour Song of Blades & Heroes
+Cartes d'unités pour One Page Kill Team
 
-"Song of Blades & Heroes" est un jeu de Ganesha Games : http://www.ganeshagames.net/
+"One Page Kill Team" est un jeu de "One Page Rules" : https://onepagerules.wordpress.com/
 
 ------------------------------------
 
-"Song of Blades & Heroes" unit cards.
+"One Page Kill Team" unit cards.
 
-"Song of Blades & Heroes" is a game by Ganesha Games : http://www.ganeshagames.net/
+"One Page Kill Team" is a game by "One Page Rules" : https://onepagerules.wordpress.com/
