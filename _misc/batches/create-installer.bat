@@ -1,4 +1,4 @@
-set version=1.2.4
+set version=1.4.0
 set listePckWQ=wquest.mse-game wquest-dungeondeck.mse-style wquest-eventdeck.mse-style wquest-magicitems.mse-style wquest-miscdeck.mse-style wquest-monsterdeck.mse-style
 mse.exe --create-installer wquest.%version%.mse-installer %listePckWQ%
 
@@ -14,4 +14,7 @@ mse.exe --create-installer pulpcity.%version%.mse-installer %listePckPulp%
 set listePckFrostgrave=frostgrave-spells.mse-game frostgrave-spells-gulix.mse-style frostgrave-spells-classic.mse-style
 mse.exe --create-installer frostgrave.%version%.mse-installer %listePckFrostgrave%
 
-mse.exe --create-installer gulixtemplates.%version%.mse-installer %listePckSBH% %listePckBB% %listePckWQ% %listePckPulp% %listePckFrostgrave%
+set listePckOnePage=onepagerules.mse-game onepagerules-default.mse-style
+mse.exe --create-installer onePage.%version%.mse-installer %listePckOnePage%
+
+mse.exe --create-installer gulixtemplates.%version%.mse-installer %listePckSBH% %listePckBB% %listePckWQ% %listePckPulp% %listePckFrostgrave% %listePckOnePage%

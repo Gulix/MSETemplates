@@ -1,4 +1,5 @@
 Batches utiles pour la maintenance du projet, pour gérer les fichiers, ...
+Useful batches for project maintenance, files handling, ...
 
 ** create-installer.bat
- - Crée les mse-installer des projets
+ - Crée les mse-installer des projets / Create mse-installer
