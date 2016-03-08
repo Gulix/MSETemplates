@@ -1,0 +1,178 @@
+mse version: 2.0.0
+version: 1.5.0
+game: frostgrave-creatures
+short name: Snowflakes Theme
+icon: icon.jpg
+position hint: 2
+installer group: frostgrave/default
+
+depends on:
+	package: frostgrave-creatures.mse-game
+	
+card width: 700
+card height: 525
+card dpi: 90
+
+styling field:
+	type: choice
+	name: name_font_size
+	description: Font size for the Name
+	initial: 40
+	choice: 46
+	choice: 44
+	choice: 40
+	choice: 36
+	choice: 32
+styling field:
+	type: choice
+	name: description_font_size
+	description: Font size for the description section
+	initial: 24
+	choice: 10
+	choice: 12
+	choice: 14
+	choice: 16
+	choice: 18
+	choice: 20
+	choice: 22
+	choice: 24
+	choice: 26
+	choice: 28
+	choice: 30
+styling field:
+	type: choice
+	name: language
+	description: Language of the card
+	initial: en
+	choice: en
+	choice: fr
+styling field:
+	type: choice
+	name: card_type
+	description: Type of the card
+	initial: basic
+	choice: basic
+	choice: nopicture
+card style:
+	card_name:
+		left: 17
+		top: 28
+		width: 598
+		height: 70
+		alignment: middle right
+		font:
+			name: Modern Antiqua
+			size: { styling.name_font_size }
+			color: rgb(0, 0, 0)
+			weight: bold
+		z index: 1
+	rules_description:
+		left: { if (styling.card_type == "basic") then 248 else 13 }
+		top: 191
+		width: { if (styling.card_type == "basic") then 433 else 668 }
+		height: { if (styling.card_type == "basic") then 322 else 286 }
+		alignment: top left
+		font:
+			name: Times New Roman
+			size: { styling.description_font_size }
+			color: rgb(0, 0, 0)
+		z index: 1
+	credits:
+		left: { if (styling.card_type == "basic") then 13 else 452 }
+		top: { if (styling.card_type == "basic") then 195 else 477 }
+		width: 229
+		height: 36
+		alignment: { if (styling.card_type == "basic") then "bottom left" else "bottom right" }
+		font:
+			name: Arial
+			size: 12
+			color: rgb(0, 0, 0)
+		z index: 1
+	img_description:
+		left: 13
+		top: 236
+		width: 229
+		height: 279
+		z index: -1
+	movement:
+		left: 84
+		top: 144
+		width: 84
+		height: 34
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+	fight:
+		left: 176
+		top: 144
+		width: 84
+		height: 34
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+	shoot:
+		left: 267
+		top: 144
+		width: 84
+		height: 34
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+	armour:
+		left: 358
+		top: 144
+		width: 84
+		height: 34
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+	willpower:
+		left: 450
+		top: 144
+		width: 84
+		height: 34
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+	health:
+		left: 541
+		top: 144
+		width: 84
+		height: 34
+		alignment: middle center
+		font:
+			name: Modern Antiqua
+			size: 24
+			color: rgb(0, 0, 0)
+		z index: 1
+extra card field:
+	type: choice
+	name: bg_card
+	initial: original
+	choice: original
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 700
+		height: 525
+		z index: 0
+		render style: image
+		popup style: in place
+		choice images:
+			original: { if (styling.card_type == "basic") then set_mask(image: "base-" + styling.language + ".png", mask: "base-mask.png") else if (styling.card_type == "nopicture") then "nopicture-" + styling.language + ".png" }

@@ -1,0 +1,68 @@
+﻿mse version: 2.0.0
+short name: Frostgrave
+full name:  Frostgrave Creatures
+icon: frostgrave.jpg
+position hint: 2
+installer group: frostgrave/default
+version: 1.5.0
+init script: include file: script
+
+card field:
+	type: text
+	name: card_name
+	description: Creature Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: rules_description
+	description: Rules & Description
+	multi line: true
+card field:
+	type: text
+	name: credits
+	description: Credits
+	multi line: false
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	save value: true
+card field:
+	type: text
+	name: movement
+	description: Movement
+	card list column: 3
+	card list visible: true
+card field:
+	type: text
+	name: fight
+	description: Fight
+	card list column: 4
+	card list visible: true
+card field:
+	type: text
+	name: shoot
+	description: Shoot
+	card list column: 5
+	card list visible: true
+card field:
+	type: text
+	name: armour
+	description: Armour
+	card list column: 6
+	card list visible: true
+card field:
+	type: text
+	name: willpower
+	description: willpower
+	card list column: 7
+	card list visible: true
+card field:
+	type: text
+	name: health
+	description: Health
+	card list column: 8
+	card list visible: true
