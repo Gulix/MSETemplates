@@ -174,5 +174,6 @@ extra card style:
 		z index: 0
 		render style: image
 		popup style: in place
+		mask: { if (styling.card_type == "basic") then "base-mask.png" else if (styling.card_type == "nopicture") then "nopicture-mask.png" }
 		choice images:
-			original: { if (styling.card_type == "basic") then set_mask(image: "base-" + styling.language + ".png", mask: "base-mask.png") else if (styling.card_type == "nopicture") then "nopicture-" + styling.language + ".png" }
+			original: { if (styling.card_type == "basic") then "base-" + styling.language + ".png" else if (styling.card_type == "nopicture") then "nopicture-" + styling.language + ".png" }
