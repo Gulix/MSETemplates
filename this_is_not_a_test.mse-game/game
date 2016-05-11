@@ -1,0 +1,112 @@
+﻿mse version: 2.0.0
+short name: TNT
+version: 1.0.0
+full name: This is Not a Test
+icon: TNT_icon.png
+position hint: 3
+installer group: this_is_not_a_test/default
+
+init script: include file: script
+
+card field:
+	type: text
+	name: character_name
+	description: Character Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: character_cost
+	description: Cost
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_title
+	description: Title
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_type
+	description: Type
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_move
+	description: Move
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_melee
+	description: Melee
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_ranged
+	description: Ranged
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_strength
+	description: Strength
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_mettle
+	description: Mettle
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_defense
+	description: Defense
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_wounds
+	description: Wounds
+	show statistics: false
+	card list visible: false
+	card list allow: false
+card field:
+	type: text
+	name: character_special_rules
+	description: Special Rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
+	name: character_injuries
+	description: Special Rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: false
+card field:
+	type: image
+	name: img_description
+	description: Card image
+	editable: true
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	save value: true
