@@ -1,8 +1,8 @@
 mse version: 2.0.0
 game: this_is_not_a_test
 version: 1.0.0
-short name: Character
-full name: TNT Character Style
+short name: Character Front
+full name: TNT Character Style (Front)
 icon: icon.png
 position hint: 1
 installer group: this_is_not_a_test/Character
@@ -19,150 +19,152 @@ card style:
 		left: 20
 		top: 20
 		width: 375
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
-			weight: bold
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_cost:
 		left: 405
 		top: 20
 		width: 55
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
-			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_title:
 		left: 20
-		top: 330
+		top: 310
 		width: 215
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
-			name: Arial Black
-			size: 20
+			name: Arial
+			size: 18
+			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_type:
 		left: 245
-		top: 330
+		top: 310
 		width: 215
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
-			name: Arial Black
-			size: 20
+			name: Arial
+			size: 18
+			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_move:
 		left: 30
-		top: 430
+		top: 380
 		width: 55
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_melee:
 		left: 95
-		top: 430
+		top: 380
 		width: 50
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_ranged:
 		left: 155
-		top: 430
+		top: 380
 		width: 50
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_strength:
 		left: 215
-		top: 430
+		top: 380
 		width: 50
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_mettle:
 		left: 275
-		top: 430
+		top: 380
 		width: 50
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_defense:
 		left: 335
-		top: 430
+		top: 380
 		width: 50
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_wounds:
 		left: 395
-		top: 430
+		top: 380
 		width: 55
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
-			size: 20
+			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_special_rules:
 		left: 20
-		top: 530
+		top: 450
 		width: 440
 		height: 90
 		alignment: top left
 		font:
-			name: Arial Black
+			name: Arial
 			size: 12
+			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_injuries:
 		left: 20
-		top: 680
+		top: 580
 		width: 440
 		height: 40
-		alignment: middle left
+		alignment: top left
 		font:
-			name: Arial Black
-			size: 16
+			name: Arial
+			size: 12
+			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
 	img_description:
 		left: 40
-		top: 80
+		top: 65
 		width: 400
 		height: 230
 		z index: -1
