@@ -95,12 +95,44 @@ card field:
 	multi line: true
 card field:
 	type: text
+	name: character_equipment
+	description: Equipment
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
+	type: text
 	name: character_injuries
 	description: Special Rules
 	show statistics: false
 	card list visible: false
 	card list allow: false
 	multi line: true
+card field:
+	type: text
+	name: character_upkeep
+	description: Special Rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: false
+card field:
+	type: text
+	name: character_unspent_xp
+	description: Special Rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: false
+card field:
+	type: text
+	name: character_total_xp
+	description: Special Rules
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: false
 card field:
 	type: text
 	name: equipment_name

@@ -39,7 +39,7 @@ card style:
 		z index: 1
 	character_title:
 		left: 20
-		top: 310
+		top: 55
 		width: 215
 		height: 30
 		alignment: middle center
@@ -51,7 +51,7 @@ card style:
 		z index: 1
 	character_type:
 		left: 245
-		top: 310
+		top: 55
 		width: 215
 		height: 30
 		alignment: middle center
@@ -62,8 +62,8 @@ card style:
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_move:
-		left: 30
-		top: 380
+		left: 405
+		top: 90
 		width: 55
 		height: 30
 		alignment: middle center
@@ -73,63 +73,8 @@ card style:
 			color: rgb(0, 0, 0)
 		z index: 1
 	character_melee:
-		left: 95
-		top: 380
-		width: 50
-		height: 30
-		alignment: middle center
-		font:
-			name: Arial Black
-			size: 18
-			color: rgb(0, 0, 0)
-		z index: 1
-	character_ranged:
-		left: 155
-		top: 380
-		width: 50
-		height: 30
-		alignment: middle center
-		font:
-			name: Arial Black
-			size: 18
-			color: rgb(0, 0, 0)
-		z index: 1
-	character_strength:
-		left: 215
-		top: 380
-		width: 50
-		height: 30
-		alignment: middle center
-		font:
-			name: Arial Black
-			size: 18
-			color: rgb(0, 0, 0)
-		z index: 1
-	character_mettle:
-		left: 275
-		top: 380
-		width: 50
-		height: 30
-		alignment: middle center
-		font:
-			name: Arial Black
-			size: 18
-			color: rgb(0, 0, 0)
-		z index: 1
-	character_defense:
-		left: 335
-		top: 380
-		width: 50
-		height: 30
-		alignment: middle center
-		font:
-			name: Arial Black
-			size: 18
-			color: rgb(0, 0, 0)
-		z index: 1
-	character_wounds:
-		left: 395
-		top: 380
+		left: 405
+		top: 125
 		width: 55
 		height: 30
 		alignment: middle center
@@ -138,11 +83,78 @@ card style:
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
+	character_ranged:
+		left: 405
+		top: 160
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_strength:
+		left: 405
+		top: 195
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_mettle:
+		left: 405
+		top: 230
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_defense:
+		left: 405
+		top: 265
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_wounds:
+		left: 405
+		top: 300
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_equipment:
+		left: 20
+		top: 370
+		width: 440
+		height: 95
+		alignment: top left
+		font:
+			name: Arial
+			size: 12
+			weight: bold
+			color: rgb(0, 0, 0)
+		z index: 1
 	character_special_rules:
 		left: 20
-		top: 450
+		top: 505
 		width: 440
-		height: 90
+		height: 75
 		alignment: top left
 		font:
 			name: Arial
@@ -152,7 +164,7 @@ card style:
 		z index: 1
 	character_injuries:
 		left: 20
-		top: 580
+		top: 620
 		width: 440
 		height: 40
 		alignment: top left
@@ -162,10 +174,43 @@ card style:
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
+	character_upkeep:
+		left: 405
+		top: 665
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_unspent_xp:
+		left: 285
+		top: 700
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	character_total_xp:
+		left: 405
+		top: 700
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
 	img_description:
-		left: 40
-		top: 65
-		width: 400
+		left: 25
+		top: 95
+		width: 205
 		height: 230
 		z index: -1
 extra card field:
