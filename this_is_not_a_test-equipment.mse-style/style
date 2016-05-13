@@ -4,7 +4,7 @@ version: 1.0.0
 short name: Equipment
 full name: TNT Equipment Style
 icon: icon.png
-position hint: 2
+position hint: 1
 installer group: this_is_not_a_test/Equipment
 
 depends on:
@@ -15,46 +15,45 @@ card height: 742
 card dpi: 300
 
 card style:
-	equipment_name:
+	name:
 		left: 20
 		top: 20
 		width: 375
-		height: 40
-		alignment: middle center
-		font:
-			name: Arial Black
-			size: 20
-			weight: bold
-			color: rgb(0, 0, 0)
-		z index: 1
-	equipment_cost:
-		left: 405
-		top: 20
-		width: 55
-		height: 40
+		height: 30
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	cost:
+		left: 405
+		top: 20
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	special_rules:
+		left: 20
+		top: 345
+		width: 440
+		height: 375
+		alignment: top left
+		font:
+			name: Arial
+			size: 12
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	equipment_rules:
-		left: 20
-		top: 380
-		width: 440
-		height: 340
-		alignment: top left
-		font:
-			name: Arial Black
-			size: 12
-			color: rgb(0, 0, 0)
-		z index: 1
 	img_description:
-		left: 40
-		top: 80
-		width: 400
-		height: 230
+		left: 25
+		top: 60
+		width: 430
+		height: 240
 		z index: -1
 extra card field:
 	type: choice

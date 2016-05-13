@@ -1,8 +1,8 @@
 mse version: 2.0.0
 game: this_is_not_a_test
 version: 1.0.0
-short name: Character Front
-full name: TNT Character Style (Front)
+short name: Character
+full name: TNT Character Style
 icon: icon.png
 position hint: 1
 installer group: this_is_not_a_test/Character
@@ -15,7 +15,7 @@ card height: 742
 card dpi: 300
 
 card style:
-	character_name:
+	name:
 		left: 20
 		top: 20
 		width: 375
@@ -26,7 +26,7 @@ card style:
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_cost:
+	cost:
 		left: 405
 		top: 20
 		width: 55
@@ -37,7 +37,7 @@ card style:
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_title:
+	title:
 		left: 20
 		top: 55
 		width: 215
@@ -49,7 +49,7 @@ card style:
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_type:
+	type:
 		left: 245
 		top: 55
 		width: 215
@@ -61,84 +61,109 @@ card style:
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_move:
-		left: 405
+
+	warband_name:
+		left: 20
 		top: 90
-		width: 55
+		width: 215
 		height: 30
 		alignment: middle center
 		font:
-			name: Arial Black
+			name: Arial
 			size: 18
+			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_melee:
+	warband_type:
+		left: 245
+		top: 90
+		width: 215
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial
+			size: 18
+			weight: bold
+			color: rgb(0, 0, 0)
+		z index: 1
+	move:
 		left: 405
 		top: 125
 		width: 55
-		height: 30
+		height: 25
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_ranged:
+	melee:
 		left: 405
-		top: 160
+		top: 155
 		width: 55
-		height: 30
+		height: 25
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_strength:
+	ranged:
 		left: 405
-		top: 195
+		top: 185
 		width: 55
-		height: 30
+		height: 25
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_mettle:
+	strength:
 		left: 405
-		top: 230
+		top: 215
 		width: 55
-		height: 30
+		height: 25
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_defense:
+	mettle:
 		left: 405
-		top: 265
+		top: 245
 		width: 55
-		height: 30
+		height: 25
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_wounds:
+	defense:
 		left: 405
-		top: 300
+		top: 275
 		width: 55
-		height: 30
+		height: 25
 		alignment: middle center
 		font:
 			name: Arial Black
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_equipment:
+	wounds:
+		left: 405
+		top: 305
+		width: 55
+		height: 25
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	equipment:
 		left: 20
 		top: 370
 		width: 440
@@ -150,7 +175,7 @@ card style:
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_special_rules:
+	special_rules:
 		left: 20
 		top: 505
 		width: 440
@@ -162,7 +187,7 @@ card style:
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_injuries:
+	injuries:
 		left: 20
 		top: 620
 		width: 440
@@ -174,7 +199,7 @@ card style:
 			weight: bold
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_upkeep:
+	upkeep:
 		left: 405
 		top: 665
 		width: 55
@@ -185,7 +210,7 @@ card style:
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_unspent_xp:
+	unspent_xp:
 		left: 285
 		top: 700
 		width: 55
@@ -196,7 +221,7 @@ card style:
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
-	character_total_xp:
+	total_xp:
 		left: 405
 		top: 700
 		width: 55
@@ -209,9 +234,9 @@ card style:
 		z index: 1
 	img_description:
 		left: 25
-		top: 95
+		top: 130
 		width: 205
-		height: 230
+		height: 195
 		z index: -1
 extra card field:
 	type: choice
