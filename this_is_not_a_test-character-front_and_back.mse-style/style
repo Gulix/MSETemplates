@@ -232,6 +232,18 @@ card style:
 			size: 18
 			color: rgb(0, 0, 0)
 		z index: 1
+	back_notes:
+		left: 505
+		top: 505
+		width: 480
+		height: 240
+		alignment: top left
+		font:
+			name: Arial
+			size: 12
+			weight: bold
+			color: rgb(0, 0, 0)
+		z index: 1
 	img_description:
 		left: 25
 		top: 130

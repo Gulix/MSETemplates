@@ -140,6 +140,14 @@ card field:
 	card list allow: false
 	multi line: false
 card field:
+	type: text
+	name: back_notes
+	description: Back Notes
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: true
+card field:
 	type: image
 	name: img_description
 	description: Card image
