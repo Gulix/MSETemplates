@@ -23,6 +23,16 @@ card field:
 	card list visible: true
 card field:
 	type: text
+	name: cost_2w
+	description: Cost (2W)
+	card list visible: false
+card field:
+	type: text
+	name: cost_3w
+	description: Cost (3W)
+	card list visible: false
+card field:
+	type: text
 	name: title
 	description: Title
 	show statistics: false
@@ -147,6 +157,22 @@ card field:
 	card list visible: false
 	card list allow: false
 	multi line: true
+card field:
+	type: text
+	name: armor_bonus_melee
+	description: Armor Bonus (Melee)
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: false
+card field:
+	type: text
+	name: armor_bonus_ranged
+	description: Armor Bonus (Ranged)
+	show statistics: false
+	card list visible: false
+	card list allow: false
+	multi line: false
 card field:
 	type: image
 	name: img_description
