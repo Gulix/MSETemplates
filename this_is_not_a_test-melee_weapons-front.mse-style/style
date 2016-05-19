@@ -1,0 +1,118 @@
+mse version: 2.0.0
+game: this_is_not_a_test
+version: 1.0.0
+short name: Melee
+full name: TNT Melee Weapon Style
+icon: icon.png
+position hint: 5
+installer group: this_is_not_a_test/Melee
+
+depends on:
+	package: this_is_not_a_test.mse-game
+	
+card width: 480
+card height: 742
+card dpi: 300
+
+card style:
+	name:
+		left: 20
+		top: 20
+		width: 375
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	cost:
+		left: 405
+		top: 20
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	range_melee:
+		left: 25
+		top: 375
+		width: 210
+		height: 25
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	range_thrown:
+		left: 245
+		top: 375
+		width: 210
+		height: 25
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	strength:
+		left: 130
+		top: 405
+		width: 105
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	hands:
+		left: 355
+		top: 405
+		width: 105
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	special_rules:
+		left: 20
+		top: 475
+		width: 440
+		height: 245
+		alignment: top left
+		font:
+			name: Arial
+			size: 12
+			weight: bold
+			color: rgb(0, 0, 0)
+		z index: 1
+	img_description:
+		left: 25
+		top: 60
+		width: 430
+		height: 240
+		z index: -1
+extra card field:
+	type: choice
+	name: melee_card
+	initial: melee
+	choice: melee
+extra card style:
+	melee_card:
+		left: 0
+		top: 0
+		width: 480
+		height: 742
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: melee_weapons_mask.png
+		choice images:
+			melee: melee_weapons.png
