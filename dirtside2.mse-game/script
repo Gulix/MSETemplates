@@ -1,0 +1,3 @@
+﻿only_numbers := filter_text@(match: "^[0123456789]+")
+armour := filter_text@(match: "^[0123456789RA]+")
+range := filter_text@(match: "^[0123456789cm\"]+")
