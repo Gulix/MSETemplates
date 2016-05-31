@@ -4,7 +4,7 @@ version: 1.0.0
 short name: Character (Double)
 full name: TNT Character Style (Front and Back)
 icon: icon.png
-position hint: 1
+position hint: 2
 installer group: this_is_not_a_test/Character-Front_and_Back
 
 depends on:
