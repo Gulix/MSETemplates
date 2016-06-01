@@ -4,7 +4,7 @@ version: 1.0.0
 short name: Melee
 full name: TNT Melee Weapon Style
 icon: icon.png
-position hint: 7
+position hint: 5
 installer group: this_is_not_a_test/Melee
 
 depends on:

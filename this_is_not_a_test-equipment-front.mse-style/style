@@ -4,7 +4,7 @@ version: 1.0.0
 short name: Equipment
 full name: TNT Equipment Style
 icon: icon.png
-position hint: 3
+position hint: 9
 installer group: this_is_not_a_test/Equipment
 
 depends on:

@@ -4,7 +4,7 @@ version: 1.0.0
 short name: Armor (Double)
 full name: TNT Armor Style (Front and Back)
 icon: icon.png
-position hint: 6
+position hint: 4
 installer group: this_is_not_a_test/Armor-Front_and_Back
 
 depends on:

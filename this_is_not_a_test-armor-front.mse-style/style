@@ -4,7 +4,7 @@ version: 1.0.0
 short name: Armor
 full name: TNT Armor Style
 icon: icon.png
-position hint: 5
+position hint: 3
 installer group: this_is_not_a_test/Armor
 
 depends on:
