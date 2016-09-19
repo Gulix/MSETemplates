@@ -3,7 +3,7 @@ short name: Pulp City symbols
 icon: pulp_city.jpg
 position hint: 1
 installer group: pulpcity/symbols
-version: 1.2.2
+version: 1.5.1
 image font size: 20
 horizontal space: 2
 symbol:
@@ -78,30 +78,132 @@ symbol:
 	code: /MYSTERY
 	image: origin_mystery.png
 	image font size: 20
+symbol:
+	code: -ST
+	image: traits_strength_white.png
+	image font size: 20
+symbol:
+	code: -DF
+	image: traits_defense_white.png
+	image font size: 20
+symbol:
+	code: -AG
+	image: traits_agility_white.png
+	image font size: 20
+symbol:
+	code: -EN
+	image: traits_energy_white.png
+	image font size: 20
+symbol:
+	code: -MN
+	image: traits_mind_white.png
+	image font size: 20
+symbol:
+	code: -SP
+	image: traits_spirit_white.png
+	image font size: 20
+symbol:
+	code: -HERO
+	image: hero_white.png
+	image font size: 20
+symbol:
+	code: -VILLAIN
+	image: villain_white.png
+	image font size: 20
+symbol:
+	code: -SMASH
+	image: smash_white.png
+	image font size: 20
+symbol:
+	code: -AIR
+	image: air_white.png
+	image font size: 20
+symbol:
+	code: -WATER
+	image: water_white.png
+	image font size: 20
+symbol:
+	code: -EARTH
+	image: earth_white.png
+	image font size: 20
+symbol:
+	code: -FIRE
+	image: fire_white.png
+	image font size: 20
+symbol:
+	code: -LIGHT
+	image: light_white.png
+	image font size: 20
+symbol:
+	code: -DARKNESS
+	image: darkness_white.png
+	image font size: 20
+symbol:
+	code: -SCIENCE
+	image: origin_science_white.png
+	image font size: 20
+symbol:
+	code: -NATURE
+	image: origin_nature_white.png
+	image font size: 20
+symbol:
+	code: -MYSTERY
+	image: origin_mystery_white.png
+	image font size: 20
 insert symbol menu:
-	item: /ST
-	item: /DF
-	item: /AG
-	item: /EN
-	item: /MN
-	item: /SP
 	item:
-		type: line
-	item: /HERO
-	item: /VILLAIN
+		name: black
+		item: /ST
+		item: /DF
+		item: /AG
+		item: /EN
+		item: /MN
+		item: /SP
+		item:
+			type: line
+		item: /HERO
+		item: /VILLAIN
+		item:
+			type: line
+		item: /SMASH
+		item:
+			name: elements
+			item: /AIR
+			item: /WATER
+			item: /EARTH
+			item: /FIRE
+			item: /LIGHT
+			item: /DARKNESS
+		item:
+			name: origins
+			item: /MYSTERY
+			item: /NATURE
+			item: /SCIENCE
 	item:
-		type: line
-	item: /SMASH
-	item:
-		name: elements
-		item: /AIR
-		item: /WATER
-		item: /EARTH
-		item: /FIRE
-		item: /LIGHT
-		item: /DARKNESS
-	item:
-		name: origins
-		item: /MYSTERY
-		item: /NATURE
-		item: /SCIENCE
+		name: white
+		item: -ST
+		item: -DF
+		item: -AG
+		item: -EN
+		item: -MN
+		item: -SP
+		item:
+			type: line
+		item: -HERO
+		item: -VILLAIN
+		item:
+			type: line
+		item: -SMASH
+		item:
+			name: elements
+			item: -AIR
+			item: -WATER
+			item: -EARTH
+			item: -FIRE
+			item: -LIGHT
+			item: -DARKNESS
+		item:
+			name: origins
+			item: -MYSTERY
+			item: -NATURE
+			item: -SCIENCE
