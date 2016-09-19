@@ -4,7 +4,7 @@ short name: Faction Cards
 icon: pulp_city.jpg
 position hint: 5
 installer group: pulpcity/Faction Cards
-version: 1.2.4
+version: 1.5.1
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:
@@ -70,6 +70,9 @@ card style:
 			color: rgb(255, 255, 255)
 			italic name: Komika Display Tight
 		z index: 1
+		symbol font:
+			name: pulpcity-icons
+			size: 24
 	informations_2:
 		left: 0
 		top: 850
@@ -81,6 +84,9 @@ card style:
 			size: 20
 			color: rgb(66, 66, 66)
 		z index: 1
+		symbol font:
+			name: pulpcity-icons
+			size: 20
 	description:
 		left: 0
 		top: 336
@@ -92,6 +98,9 @@ card style:
 			size: 18
 			color: rgb(127, 127, 127)
 		z index: 2
+		symbol font:
+			name: pulpcity-icons
+			size: 18
 	img_description:
 		left: 0
 		top: 133
