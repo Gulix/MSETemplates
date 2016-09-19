@@ -4,7 +4,7 @@ short name: Leader Cards
 icon: pulp_city.jpg
 position hint: 4
 installer group: pulpcity/Leader Cards
-version: 1.2.4
+version: 1.5.1
 depends on:
 	package: pulpcity-cards.mse-game
 depends on:
@@ -77,6 +77,9 @@ card style:
 			size: 22
 			color: rgb(66, 66, 66)
 		z index: 1
+		symbol font:
+			name: pulpcity-icons
+			size: 22
 	informations_1:
 		left: 0
 		top: 691
