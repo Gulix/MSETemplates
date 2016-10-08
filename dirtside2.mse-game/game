@@ -1,0 +1,456 @@
+﻿mse version: 2.0.0
+short name: dirtside2
+version: 1.0.0
+full name: Dirtside 2
+icon: icon.jpg
+position hint: 3
+installer group: dirtside2/default
+
+init script: include file: script
+
+card field:
+	type: text
+	name: name
+	description: Name
+	card list column: 1
+	card list visible: true
+	identifying: true
+card field:
+	type: text
+	name: type
+	description: Type
+card field:
+	type: text
+	name: size_class
+	description: Size Class
+	script: only_numbers(value)
+card field:
+	type: text
+	name: basic_signature
+	description: Basic Signature
+	script: only_numbers(value)
+card field:
+	type: text
+	name: stealth_level
+	description: Stealth Level
+	script: only_numbers(value) 
+card field:
+	type: choice
+	name: effective_target_die
+	description: Effective Target Die
+	initial: 4
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: mobility_type
+	description: Mobility Type
+card field:
+	type: text
+	name: basic_move
+	description: Basic Move
+card field:
+	type: text
+	name: points_value
+	description: Points Value
+	script: only_numbers(value)
+card field:
+	type: choice
+	name: firecon
+	description: Firecon
+	initial: Basic
+	choice: Basic
+	choice: Enhanced
+	choice: Superior
+card field:
+	type: choice
+	name: ecm
+	description: ECM
+	initial: None
+	choice: None
+	choice: Basic
+	choice: Enh.
+	choice: Sup.
+card field:
+	type: choice
+	name: ecm_die
+	description: ECM
+	initial: 4
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: armour_front
+	description: Armour (Front)
+	script: armour(value)
+card field:
+	type: text
+	name: armour_side
+	description: Armour (Side)
+	script: armour(value)
+card field:
+	type: text
+	name: weapon1
+	description: Weapon 1
+card field:
+	type: text
+	name: weapon1_mount
+	description: Weapon 1 Mount
+card field:
+	type: text
+	name: weapon1_upto_close
+	description: Weapon 1 Close Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon1_die_close
+	description: Weapon 1 Close Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon1_valid_hits_close
+	description: Weapon 1 Close Range Valid Hits
+card field:
+	type: text
+	name: weapon1_upto_medium
+	description: Weapon 1 Medium Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon1_die_medium
+	description: Weapon 1 Medium Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon1_valid_hits_medium
+	description: Weapon 1 Medium Range Valid Hits
+card field:
+	type: text
+	name: weapon1_upto_long
+	description: Weapon 1 Long Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon1_die_long
+	description: Weapon 1 Long Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon1_valid_hits_long
+	description: Weapon 1 Long Range Valid Hits
+card field:
+	type: text
+	name: weapon2
+	description: Weapon 2
+card field:
+	type: text
+	name: weapon2_mount
+	description: Weapon 2 Mount
+card field:
+	type: text
+	name: weapon2_upto_close
+	description: Weapon 2 Close Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon2_die_close
+	description: Weapon 2 Close Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon2_valid_hits_close
+	description: Weapon 2 Close Range Valid Hits
+card field:
+	type: text
+	name: weapon2_upto_medium
+	description: Weapon 2 Medium Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon2_die_medium
+	description: Weapon 2 Medium Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon2_valid_hits_medium
+	description: Weapon 2 Medium Range Valid Hits
+card field:
+	type: text
+	name: weapon2_upto_long
+	description: Weapon 2 Long Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon2_die_long
+	description: Weapon 2 Long Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon2_valid_hits_long
+	description: Weapon 2 Long Range Valid Hits
+card field:
+	type: text
+	name: weapon3
+	description: Weapon 3
+card field:
+	type: text
+	name: weapon3_mount
+	description: Weapon 3 Mount
+card field:
+	type: text
+	name: weapon3_upto_close
+	description: Weapon 3 Close Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon3_die_close
+	description: Weapon 3 Close Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon3_valid_hits_close
+	description: Weapon 3 Close Range Valid Hits
+card field:
+	type: text
+	name: weapon3_upto_medium
+	description: Weapon 3 Medium Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon3_die_medium
+	description: Weapon 3 Medium Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon3_valid_hits_medium
+	description: Weapon 3 Medium Range Valid Hits
+card field:
+	type: text
+	name: weapon3_upto_long
+	description: Weapon 3 Long Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon3_die_long
+	description: Weapon 3 Long Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon3_valid_hits_long
+	description: Weapon 3 Long Range Valid Hits
+card field:
+	type: text
+	name: weapon4
+	description: Weapon 4
+card field:
+	type: text
+	name: weapon4_mount
+	description: Weapon 4 Mount
+card field:
+	type: text
+	name: weapon4_upto_close
+	description: Weapon 4 Close Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon4_die_close
+	description: Weapon 4 Close Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon4_valid_hits_close
+	description: Weapon 4 Close Range Valid Hits
+card field:
+	type: text
+	name: weapon4_upto_medium
+	description: Weapon 4 Medium Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon4_die_medium
+	description: Weapon 4 Medium Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon4_valid_hits_medium
+	description: Weapon 4 Medium Range Valid Hits
+card field:
+	type: text
+	name: weapon4_upto_long
+	description: Weapon 4 Long Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon4_die_long
+	description: Weapon 4 Long Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon4_valid_hits_long
+	description: Weapon 4 Long Range Valid Hits
+card field:
+	type: text
+	name: weapon5
+	description: Weapon 5
+card field:
+	type: text
+	name: weapon5_mount
+	description: Weapon 5 Mount
+card field:
+	type: text
+	name: weapon5_upto_close
+	description: Weapon 5 Close Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon5_die_close
+	description: Weapon 5 Close Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon5_valid_hits_close
+	description: Weapon 5 Close Range Valid Hits
+card field:
+	type: text
+	name: weapon5_upto_medium
+	description: Weapon 5 Medium Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon5_die_medium
+	description: Weapon 5 Medium Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon5_valid_hits_medium
+	description: Weapon 5 Medium Range Valid Hits
+card field:
+	type: text
+	name: weapon5_upto_long
+	description: Weapon 5 Long Range
+	script: range(value)
+card field:
+	type: choice
+	name: weapon5_die_long
+	description: Weapon 5 Long Range Die
+	initial:
+	choice:
+	choice: -
+	choice: 4
+	choice: 6
+	choice: 8
+	choice: 10
+	choice: 12
+card field:
+	type: text
+	name: weapon5_valid_hits_long
+	description: Weapon 5 Long Range Valid Hits
+card field:
+	type: text
+	name: notes
+	description: Other Equipment and Notes
+	multi line: true

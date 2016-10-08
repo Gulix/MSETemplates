@@ -1,0 +1,315 @@
+mse version: 2.0.0
+game: dirtside2
+version: 1.0.0
+short name: Basic
+full name: Basic Dirtside 2 Style
+icon: icon.jpg
+position hint: 1
+installer group: dirtside2/default
+
+depends on:
+	package: dirtside2.mse-game
+	
+card width: 742
+card height: 502
+card dpi: 300
+
+card style:
+	name:
+		left: 325
+		top: 13
+		width: 156
+		height: 29
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	type:
+		left: 538
+		top: 13
+		width: 186
+		height: 29
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	size_class:
+		left: 82
+		top: 65
+		width: 84
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	basic_signature:
+		left: 266
+		top: 65
+		width: 82
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	stealth_level:
+		left: 443
+		top: 65
+		width: 82
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	effective_target_die:
+		left: 658
+		top: 65
+		width: 62
+		height: 31
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	mobility_type:
+		left: 84
+		top: 104
+		width: 262
+		height: 31
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	basic_move:
+		left: 443
+		top: 104
+		width: 80
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	points_value:
+		left: 638
+		top: 104
+		width: 82
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	firecon:
+		left: 80
+		top: 142
+		width: 88
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 12
+			color: rgb(0, 0, 0)
+		z index: 1
+	ecm:
+		left: 219
+		top: 142
+		width: 75
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 12
+			color: rgb(0, 0, 0)
+		z index: 1
+	ecm_die:
+		left: 318
+		top: 142
+		width: 32
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	armour_front:
+		left: 490
+		top: 142
+		width: 95
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	armour_side:
+		left: 616
+		top: 142
+		width: 103
+		height: 31
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+<<<<<<< HEAD
+			color: rgb(0, 0, 0)
+		z index: 1
+=======
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1:
+		left: 17
+		top: 226
+		width: 158
+		height: 40
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_mount:
+		left: 176
+		top: 226
+		width: 45
+		height: 40
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_upto_close:
+		left: 223
+		top: 226
+		width: 45
+		height: 40
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_die_close:
+		left: 282
+		top: 226
+		width: 30
+		height: 40
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_valid_hits_close:
+		left: 314
+		top: 226
+		width: 75
+		height: 40
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_upto_medium:
+		left: 389
+		top: 226
+		width: 45
+		height: 40
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_die_medium:
+		left: 450
+		top: 226
+		width: 30
+		height: 40
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_valid_hits_medium:
+		left: 480
+		top: 226
+		width: 75
+		height: 40
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_upto_long:
+		left: 558
+		top: 226
+		width: 45
+		height: 40
+		alignment: middle left
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_die_long:
+		left: 618
+		top: 226
+		width: 30
+		height: 40
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+	weapon1_valid_hits_long:
+		left: 646
+		top: 226
+		width: 75
+		height: 40
+		alignment: middle center
+		font:
+			name: Calibri
+			size: 14
+			color: rgb(0, 0, 0)
+		z index: 1
+
+>>>>>>> 9100101... WIP
+extra card field:
+	type: choice
+	name: bg_card
+	initial: basic
+	choice: basic
+extra card style:
+	bg_card:
+		left: 0
+		top: 0
+		width: 742
+		height: 502
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: card_mask.png
+		choice images:
+			basic: dirtside2_sheet.png
