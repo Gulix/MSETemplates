@@ -1,0 +1,33 @@
+mse version: 2.0.0
+game: this_is_not_a_test
+version: 1.0.0
+short name: Back
+full name: TNT Card Backs
+icon: icon.png
+position hint: 11
+installer group: this_is_not_a_test/Back
+
+depends on:
+	package: this_is_not_a_test.mse-game
+	
+card width: 480
+card height: 742
+card dpi: 300
+
+card style:
+extra card field:
+	type: choice
+	name: card_back
+	initial: back
+	choice: back
+extra card style:
+	card_back:
+		left: 0
+		top: 0
+		width: 480
+		height: 742
+		z index: 0
+		render style: image
+		popup style: in place
+		choice images:
+			character: card_back.png

@@ -1,0 +1,74 @@
+mse version: 2.0.0
+game: this_is_not_a_test
+version: 1.0.0
+short name: Equipment
+full name: TNT Equipment Style
+icon: icon.png
+position hint: 9
+installer group: this_is_not_a_test/Equipment
+
+depends on:
+	package: this_is_not_a_test.mse-game
+	
+card width: 480
+card height: 742
+card dpi: 300
+
+card style:
+	name:
+		left: 20
+		top: 20
+		width: 375
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	cost:
+		left: 405
+		top: 20
+		width: 55
+		height: 30
+		alignment: middle center
+		font:
+			name: Arial Black
+			size: 18
+			color: rgb(0, 0, 0)
+		z index: 1
+	special_rules:
+		left: 20
+		top: 345
+		width: 440
+		height: 375
+		alignment: top left
+		font:
+			name: Arial
+			size: 12
+			weight: bold
+			color: rgb(0, 0, 0)
+		z index: 1
+	img_description:
+		left: 25
+		top: 60
+		width: 430
+		height: 240
+		z index: -1
+extra card field:
+	type: choice
+	name: equipment_card
+	initial: equipment
+	choice: equipment
+extra card style:
+	equipment_card:
+		left: 0
+		top: 0
+		width: 480
+		height: 742
+		z index: 0
+		render style: image
+		popup style: in place
+		mask: equipment_card_mask.png
+		choice images:
+			equipment: equipment_card.png
